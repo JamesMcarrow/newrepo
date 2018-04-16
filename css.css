@@ -1,0 +1,185 @@
+/* CSS Document */
+body{
+background-image:url("obrazek.jpg");
+background-attachment:fixed;
+height:9000px;
+}
+/*uplny uvodni obrazek; vymenit treba za uvodni fotku udalosti na fb ale do cernobile nebo nejak upravit aby se to hodilo*/
+#prvni{
+width:auto;
+height:1080px;
+background-image:url("pzd.jpg");
+margin:-8px -8px 0px -8px;
+position:relative;
+
+}
+/*pruhledny div na pozadi; dopsat text*/
+#program{
+background-color:none;
+width:auto;
+height:1080px;
+margin:0px -8px 0px -8px;
+position:relative;
+text-align:center;
+}
+/*dva hlavni intepreti; pozadi jejich obrazek; nejaky lepsi*/
+#druhy{
+width:auto;
+height:1080px;
+background-image:url("dva.jpg");
+margin:0px -8px 0px -8px;
+position:relative;
+z-index:-1;
+}
+#treti{
+width:auto;
+height:1080px;
+background-image:url("tri.jpeg");
+margin:0px -8px 0px -8px;
+position:relative;
+z-index:-1;
+}
+/*cernobile prouzky ostatnich interpetu*/
+#ostatni{
+width:auto;
+height:1080px;
+margin:0px -8px 0px -8px;
+position:relative;
+}
+.line{
+width:auto;
+height:216px;
+margin-left:-8px;
+margin-right:-8px;
+text-align:left;
+line-height:200px; 
+z-index:-1;
+}
+.line-artist-detail{
+width:auto;
+height:400px;
+margin-left:-8px;
+margin-right:-8px;
+}
+/*rozdeleni u dvou hlavnich interpretu; domyslet responzivitu*/
+/*zmenit sirku z px na % kvuli responzivite*/
+.leva{
+clip-path: polygon(0 0, 85% 0, 66% 100%, 0% 100%);
+height:100%;
+left:0px;
+width:1145px;
+background-color:white;
+display:inline-block;
+text-align:center;
+z-index:-1;
+
+}
+.prava{
+clip-path: polygon(40% 0, 100% 0, 100% 100%, 21% 100%);
+height:100%;
+width:1200px;
+right:0px;
+background-color:white;
+display:inline-block;
+float:right;
+text-align:center;
+z-index:-1;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+/*Vrchni odkazy*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float:right;
+    background-color:white;
+    width:100%;
+    opacity:0.8;
+    z-index:+1;
+}
+li{
+    display:inline-block;
+    width: 200px;
+    height:70px;
+    background-color:none;
+    font-family: 'Lobster', cursive;
+    font-size:50px;
+    line-height:60px; 
+    float:right;
+    z-index:+1;
+}
+/*vsechen text krome odkazu na vrchu*/
+.nadpis{
+font-family: 'Roboto Mono', monospace;
+color:#110D1;
+font-size:80px;
+}
+/*text v cernych prouzcich seznamu interpretu*/
+.nadpisWhite{
+font-family: 'Roboto Mono', monospace;
+color:#DCD5EB;
+font-size:80px;
+}
+
+
+/* Celkove bych to stylizoval co cernobila/sepiova pokud s tim budou souhlasit samozrejme; Zda se mi to ze to sedi k tomu prostoru i k ty akci, samozrejme bych pouzil i barvy, ale ta cernobila/sepiova spolecne
+s tim industrialnim fontem co jsem nasel si myslim pusobi dost dobre, ale tezko rict jak to bude vsechno vypadat az se to prestylizuje na jinou grafiku nez SW wallpapery*/
+
+#gallery-container{
+width:auto;
+height:1080px;
+margin:0px -8px 0px -8px;
+position:absolute;
+bottom:0px;
+top:9000px;
+}
+
+#gallery{
+ list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float:left;
+    width:200px;
+    opacity:1;
+}
+.gal{
+display:inline-block;
+width:200px;
+height:200px;
+opacity:1;
+}
+.gal-img{
+width:200px;
+height:200px;
+}
+#gallery-full{
+height:1000px;
+width:1720px;
+float:right;
+background-color:red;
+margin:0px 0px 0px 0px;
+}
+a:link{
+color:black;
+}
+a:visited{
+color:black;
+}
+a:active{
+color:black;
+}
+a{
+text-decoration:none;
+}
+#home-button{
+ float:left;
+width:50px;
+height:50px;
+margin-left:20px;
+margin-top:10px;
+opacity:1;
+z-index:+1;
+position:fixed;
+}
