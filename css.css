@@ -6,6 +6,12 @@ background-position: center top;
 background-attachment:fixed;
 height:9000px;
 }
+
+/*scrollbar*/
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 /*uplny uvodni obrazek; vymenit treba za uvodni fotku udalosti na fb ale do cernobile nebo nejak upravit aby se to hodilo*/
 #prvni{
 width:auto;
