@@ -8,7 +8,7 @@ height:9000px;
 }
 /*uplny uvodni obrazek; vymenit treba za uvodni fotku udalosti na fb ale do cernobile nebo nejak upravit aby se to hodilo*/
 #prvni{
-width:auto;
+width:100%;
 height:1080px;
 background-image:url("pzd.jpg");
 margin:-8px -8px 0px -8px;
