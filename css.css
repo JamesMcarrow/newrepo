@@ -87,9 +87,7 @@ float:right;
 text-align:center;
 z-index:-1;
 }
-::-webkit-scrollbar { 
-    display: none; 
-}
+
 /*Vrchni odkazy*/
 .menu#vrchni{
     list-style-type: none;
