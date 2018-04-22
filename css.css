@@ -5,7 +5,11 @@ background-size:cover;
 background-position: center top;
 background-attachment:fixed;
 height:9000px;
+<<<<<<< HEAD
 overflow-x: hidden;
+=======
+overflow-y:hidden;
+>>>>>>> 6bdba09c731cd01b4f4a3c93b8ac053466eb2f69
 }
 /*uplny uvodni obrazek; vymenit treba za uvodni fotku udalosti na fb ale do cernobile nebo nejak upravit aby se to hodilo*/
 #prvni{
@@ -94,6 +98,7 @@ float:right;
 text-align:center;
 z-index:-1;
 }
+<<<<<<< HEAD
 #divadlo{
 width:auto;
 height:1080px;
@@ -117,6 +122,9 @@ display: inline-block;
 
 }
 */
+=======
+
+>>>>>>> 6bdba09c731cd01b4f4a3c93b8ac053466eb2f69
 /*Vrchni odkazy*/
 .menu#vrchni{
     list-style-type: none;
