@@ -105,7 +105,7 @@ z-index:-1;
 .menu#odkazy {
     display:inline-block;
     /*width: 200px;*/
-    /*height:70px;*/
+    height:70px;
     padding-right:15px;
     padding-left:15px;
     float:right;
@@ -119,8 +119,19 @@ z-index:-1;
 /*vsechen text krome odkazu na vrchu*/
 .nadpis{
 font-family: 'Krona one', monospace;
-color:#1100D1;
-font-size:80px;
+color:black;
+font-size: 50px;
+}
+
+.nadpis2{
+font-family: 'Krona one', monospace;
+color:black;
+font-size: 25px;
+}
+.text{
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    font-size: 25px;
 }
 /*text v cernych prouzcich seznamu interpretu*/
 .nadpisWhite{
