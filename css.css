@@ -1,6 +1,8 @@
 /* CSS Document */
 body{
-background-image:url("obrazek.jpg");
+background-image:url("trat_pozadi.png");
+background-size:cover;
+background-position: center top;
 background-attachment:fixed;
 height:9000px;
 }
@@ -42,8 +44,8 @@ z-index:-1;
 /*cernobile prouzky ostatnich interpetu*/
 #ostatni{
 width:auto;
-height:1080px;
-margin:0px -8px 0px -8px;
+/*height:1080px;*/
+/*margin:0px -8px 0px -8px;*/
 position:relative;
 }
 .line{
@@ -116,13 +118,13 @@ z-index:-1;
 }
 /*vsechen text krome odkazu na vrchu*/
 .nadpis{
-font-family: 'Roboto Mono', monospace;
-color:#110D1;
+font-family: 'Krona one', monospace;
+color:#1100D1;
 font-size:80px;
 }
 /*text v cernych prouzcich seznamu interpretu*/
 .nadpisWhite{
-font-family: 'Roboto Mono', monospace;
+font-family: 'Krona one', monospace;
 color:#DCD5EB;
 font-size:80px;
 }
