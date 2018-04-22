@@ -5,25 +5,32 @@ background-size:cover;
 background-position: center top;
 background-attachment:fixed;
 height:9000px;
+overflow-x: hidden;
 }
 /*uplny uvodni obrazek; vymenit treba za uvodni fotku udalosti na fb ale do cernobile nebo nejak upravit aby se to hodilo*/
 #prvni{
 width:auto;
 height:1080px;
-background-image:url("pzd.jpg");
-margin:-8px -8px 0px -8px;
 position:relative;
+margin:-8px -8px 0px -8px;
 
+background-image:url("vzorek_pozadi.png");
+background-position: center;
+background-size: cover;
 }
 /*pruhledny div na pozadi; dopsat text*/
 #program{
-background-color:none;
+background-color:white;
 width:auto;
 height:1080px;
 margin:0px -8px 0px -8px;
 position:relative;
 text-align:center;
+background-color: rgba(255, 255, 255, 0.35);
+padding-left:35px;
+padding-right:35px;
 }
+
 /*dva hlavni intepreti; pozadi jejich obrazek; nejaky lepsi*/
 #druhy{
 width:auto;
@@ -54,7 +61,7 @@ height:216px;
 margin-left:-8px;
 margin-right:-8px;
 text-align:left;
-line-height:200px; 
+line-height:200px;
 z-index:-1;
 }
 .line-artist-detail{
@@ -87,9 +94,29 @@ float:right;
 text-align:center;
 z-index:-1;
 }
-::-webkit-scrollbar { 
-    display: none; 
+#divadlo{
+width:auto;
+height:1080px;
+background-color: rgba(255, 255, 255, 0.35);
+margin:0px -8px 0px -8px;
 }
+/*
+.theater-line{
+height:540px;
+width:768px;
+background-color: red;
+margin:0px -8px 0px 0px;
+display: inline-block;
+}
+.theater-line-detail{
+height:540px;
+width:1152px;
+margin:0px -8px 0px -8px;
+background-color:black;
+display: inline-block;
+
+}
+*/
 /*Vrchni odkazy*/
 .menu#vrchni{
     list-style-type: none;
@@ -99,7 +126,7 @@ z-index:-1;
     float:right;
     width:100%;
     z-index:1;
-    
+
     background-color: rgba(255, 255, 255, 0.8);
 }
 .menu#odkazy {
@@ -110,11 +137,11 @@ z-index:-1;
     padding-left:15px;
     float:right;
     z-index:1;
-    
+
     font-family: 'Krona one', sans-serif;
     font-size:35px;
     line-height:70px;
-    text-align: center;   
+    text-align: center;
 }
 /*vsechen text krome odkazu na vrchu*/
 .nadpis{

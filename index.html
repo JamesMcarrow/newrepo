@@ -15,77 +15,77 @@
  //galerie
         $("#1").click(function() {
               $('#gallery-full').css("background-image","url('gal_img_1.jpg')");
-              
+
         });
-        
+
         $("#2").click(function() {
               $('#gallery-full').css("background-image","url('gal_img_2.jpg')");
-              
+
         });
-        
+
         $("#3").click(function() {
               $('#gallery-full').css("background-image","url('gal_img_3.jpg')");
-              
+
         });
-        
+
         $("#4").click(function() {
               $('#gallery-full').css("background-image","url('gal_img_4.jpg')");
-              
+
         });
-        
+
         $("#5").click(function() {
               $('#gallery-full').css("background-image","url('gal_img_5.jpg')");
-              
+
         });
 // konec galerie
-// rozkliky 
+// rozkliky
 
         $('.line-artist-detail').hide();
-          
+
         $('#first-artist').click(function(){
-            
-            $('#first-artist-detail').toggle(300);   
-              
+
+            $('#first-artist-detail').toggle(300);
+
               $('#second-artist-detail').hide(150);
               $('#third-artist-detail').hide(150);
               $('#fourth-artist-detail').hide(150);
               $('#fifth-artist-detail').hide(150);
           });
-          
+
         $('#second-artist').click(function(){
-            
-            $('#second-artist-detail').toggle(300);   
-              
+
+            $('#second-artist-detail').toggle(300);
+
               $('#first-artist-detail').hide(150);
               $('#third-artist-detail').hide(150);
               $('#fourth-artist-detail').hide(150);
               $('#fifth-artist-detail').hide(150);
           });
-          
+
         $('#third-artist').click(function(){
-            
-            $('#third-artist-detail').toggle(300);   
-              
+
+            $('#third-artist-detail').toggle(300);
+
               $('#second-artist-detail').hide(150);
               $('#first-artist-detail').hide(150);
               $('#fourth-artist-detail').hide(150);
               $('#fifth-artist-detail').hide(150);
           });
-          
+
         $('#fourth-artist').click(function(){
-            
-            $('#fourth-artist-detail').toggle(300);   
-              
+
+            $('#fourth-artist-detail').toggle(300);
+
               $('#second-artist-detail').hide(150);
               $('#third-artist-detail').hide(150);
               $('#first-artist-detail').hide(150);
               $('#fifth-artist-detail').hide(150);
           });
-          
+
         $('#fifth-artist').click(function(){
-            
-            $('#fifth-artist-detail').toggle(300);   
-              
+
+            $('#fifth-artist-detail').toggle(300);
+
               $('#second-artist-detail').hide(150);
               $('#third-artist-detail').hide(150);
               $('#fourth-artist-detail').hide(150);
@@ -99,10 +99,11 @@
   <div id="prvni">
       <!--horní lišta-->
       <ul class="menu" id="vrchni">
-      <li><a class="menu" id="odkazy" href="#gallery-container">GALERIE</a></li>
-      <li><a class="menu" id="odkazy" href="#druhy">LINEUP</a></li>
-      <li><a class="menu" id="odkazy" href="#program">PROGRAM</a></li>
-      <li><a class="menu" id="odkazy" href="#prvni">O TRATI</a></li>
+      <li class="menu-li"><a class="menu" id="odkazy" href="#gallery-container">GALERIE</a></li>
+      <li class="menu-li"><a class="menu" id="odkazy" href="#kontakt">KONTAKTY</a></li>
+      <li class="menu-li"><a class="menu" id="odkazy" href="#druhy">LINEUP</a></li>
+      <li class="menu-li"><a class="menu" id="odkazy" href="#program">PROGRAM</a></li>
+      <li class="menu-li"><a class="menu" id="odkazy" href="#prvni">O TRATI</a></li>
       <li id="home-button"><a href="#prvni"><img src="logo_trat_hlavni.png"
                                                  alt="trat"
                                                  style="height:50px;
@@ -115,12 +116,12 @@
     <div style="position: absolute;
                 display: inline-block;
                 width: 100%;
-                height: auto;
+                height: 50px;
                 margin-top: 70px;
-                
+
                 background-color: rgba(255, 255, 255, 0.8);
          ">
-        
+
         <p class="nadpis2"
            style="display: inline;
                   float: left;
@@ -128,9 +129,9 @@
                   margin-top: 10px;
                   margin-bottom: 10px;
            ">
-            8. – 9. 6. 2018    
+            8. – 9. 6. 2018
         </p>
-        
+
         <p  class="nadpis2"
             style="display: inline;
                    float: right;
@@ -140,18 +141,25 @@
             ">
             PARDUBICKÉ NÁDRAŽNÍ KINO SIRIUS
         </p>
-    </div>    
-  </div>
-      
-      
-  <div id="program">
-   <p class="nadpis">Program</p>
-   <p class="text"
-      style="text-align: justify;
-             padding-left: 15px;
-             padding-right: 15px;
-             ">
-       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class 
+    </div>
+  
+    <!--dalsi obecne info-->
+    <p class="text"
+       style="display: block;
+              position: absolute;
+              top: 120px;
+              
+              margin-top: 0px;
+              padding-top: 10px;
+              padding-left: 15px;
+              padding-right: 15px;
+              overflow: auto;
+              
+              background-color: rgba(255, 255, 255, 0.3);
+              
+              text-align: justify;
+      ">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class 
        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
        hymenaeos. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis 
        quis, sem. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. 
@@ -164,51 +172,88 @@
        id erat. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nam 
        libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
        id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor 
+       repellendus. Et harum quidem rerum facilis est et expedita distinctio.  
+    </p>
+  
+  </div>
+
+
+  <div id="program">
+    <br>
+    <br>
+   <p class="nadpis">Program</p>
+   <p class="text"
+      style="text-align: justify;
+             padding-left: 15px;
+             padding-right: 15px;
+             ">
+       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class
+       aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+       hymenaeos. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis
+       quis, sem. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui.
+       Cras elementum. Fusce aliquam vestibulum ipsum. Etiam posuere lacus quis dolor.
+       Quisque tincidunt scelerisque libero. Sed elit dui, pellentesque a, faucibus vel,
+       interdum nec, diam. Maecenas fermentum, sem in pharetra pellentesque, velit turpis
+       volutpat ante, in pharetra metus odio a lectus. Integer vulputate sem a nibh rutrum
+       consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse
+       sagittis ultrices augue. Fusce tellus odio, dapibus id fermentum quis, suscipit
+       id erat. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nam
+       libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
+       id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
        repellendus. Et harum quidem rerum facilis est et expedita distinctio.
    </p>
-   
+
   </div>
-  
+
   <div id="druhy">
-  
-      <div class="prava"> 
-      
+
+      <div class="prava">
+          <br>
+          <br>
           <p class="nadpis" style="float:right; margin-right:50px;">Vneumicky</p>
-       
+
         </div>
-   
+
       </div>
-      
+
   <div id="treti">
-  
+
       <div class="leva">
-      
+          <br>
+          <br>
           <p class="nadpis" style="float:left; margin-left:50px;">Umprůjem</p>
-      
-        </div>  
-   
-      </div>  
-  <!-- Prouzky interpretu; da se dat vic pokud pribudou; Vizualy udelat jinak; cast CSS ve style v HTML, zbytek v dokumentu .line #ostatni -->                       
+
+        </div>
+
+      </div>
+  <!-- Prouzky interpretu; da se dat vic pokud pribudou; Vizualy udelat jinak; cast CSS ve style v HTML, zbytek v dokumentu .line #ostatni -->
   <div id="ostatni">
-  
+
       <div class="line" id="first-artist" style="background-color:#110D15; text-align:right; padding-right:50px;"><span class="nadpisWhite">Martin Stündl</span></div>
           <div class="line-artist-detail" id="first-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
-     
+
       <div class="line" id="second-artist" style="background-color:#DCD5EB; padding-left:50px;"><span class="nadpis">Martin Dostál</span></div>
           <div class="line-artist-detail" id="second-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
-        
+
       <div class="line" id="third-artist" style="background-color:#110D15; text-align:right; padding-right:50px;"><span class="nadpisWhite">Steaks de bison</span></div>
            <div class="line-artist-detail" id="third-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
-           
+
       <div class="line" id="fourth-artist" style="background-color:#DCD5EB; padding-left:50px;"><span class="nadpis">Market</span></div>
            <div class="line-artist-detail" id="fourth-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
-     
+
       <div class="line" id="fifth-artist" style="background-color:#110D15; text-align:right; padding-right:50px;"><span class="nadpisWhite">Antitalent </span></div>
            <div class="line-artist-detail" id="fifth-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
-      
-  
+
+      <div class="line" id="sixth-artist" style="background-color:#DCD5EB; padding-left:50px;"><span class="nadpis">Guilty Echoes</span></div>
+           <div class="line-artist-detail" id="sixth-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
+
+
   </div>
-  
+
+  <div id="kontakt">
+
+  </div>
+<!--
   <div id="gallery-container">
     <ul id="gallery">
       <li class="gal"  id="1"><img src="gal_img_1_miniature.jpg" class="gal-img"></li>
@@ -218,10 +263,11 @@
       <li class="gal"  id="5"><img src="gal_img_5_miniature.jpg" class="gal-img"></li>
     </ul>
     <div id="gallery-full">
-    
+
   </div>
   </div>
-  
+-->
+
 
   </body>
-</html>  
+</html>
