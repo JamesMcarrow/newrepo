@@ -28,17 +28,17 @@ background-size: cover;
 #program{
 background-color:white;
 width:auto;
-height:1780px;
+height:auto;
 margin:0px -8px 0px -8px;
 position:relative;
 text-align:center;
-background-color: rgba(255, 255, 255, 0.35);
+background-color: rgba(255, 255, 255, 0.5);
 }
 /*sloupce programu*/
 .program-split{
-width:960.5px;
+width:50%;
 display:inline-block;
-height:1630px;
+height:auto;
 background-color:none;
 margin:0px -2px;
 text-align: center;
@@ -47,10 +47,14 @@ text-align: center;
 list-style-type:none;
 text-align:left;
 float:left;
+
+margin-top: 0px;
+margin-bottom: 70px;
+padding-left: 30px;
 }
 .program-li{
-font-size:35px;
-font-family: 'Krona one', monospace;
+font-size:30px;
+font-family: 'Roboto', monospace;
 color:black;
 padding-top:10px;
 padding-bottom:10px;
@@ -197,7 +201,7 @@ line-height:75px;
     z-index:1;
 
     font-family: 'Krona one', sans-serif;
-    font-size:35px;
+    font-size:30px;
     line-height:70px;
     text-align: center;
 }
