@@ -8,8 +8,8 @@ height:9000px;
 }
 
 /*scrollbar*/
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -28,13 +28,32 @@ background-size: cover;
 #program{
 background-color:white;
 width:auto;
-height:1080px;
+height:1780px;
 margin:0px -8px 0px -8px;
 position:relative;
 text-align:center;
 background-color: rgba(255, 255, 255, 0.35);
-padding-left:35px;
-padding-right:35px;
+}
+/*sloupce programu*/
+.program-split{
+width:960.5px;
+display:inline-block;
+height:1630px;
+background-color:none;
+margin:0px -2px;
+text-align: center;
+}
+.program-ul{
+list-style-type:none;
+text-align:left;
+float:left;
+}
+.program-li{
+font-size:35px;
+font-family: 'Krona one', monospace;
+color:black;
+padding-top:10px;
+padding-bottom:10px;
 }
 
 /*dva hlavni intepreti; pozadi jejich obrazek; nejaky lepsi*/
@@ -100,29 +119,61 @@ float:right;
 text-align:center;
 z-index:-1;
 }
+#film-nazev{
+width:auto;
+height:240px;
+margin:0px -8px 0px -8px;
+position:relative;
+}
+
+.film-line{
+height:240px;
+width:641px;
+background-color: red;
+margin:0px -2px;
+display: inline-block;
+position:relative;
+text-align: center;
+vertical-align: middle;
+padding-top:75px;
+line-height: 50px;
+}
+.film-line-detail{
+height:480px;
+width:641px;
+margin:0px -2px;
+background-color:blue;
+display: inline-block;
+position:relative;
+padding-top:75px;
+text-align:center;
+}
+#film-detail{
+height:480px;
+width:auto;
+margin:0px -8px 0px -8px;
+position:relative;
+}
 #divadlo{
 width:auto;
-height:1080px;
-background-color: rgba(255, 255, 255, 0.35);
+height:200px;
 margin:0px -8px 0px -8px;
+position:relative;
 }
-/*
 .theater-line{
-height:540px;
-width:768px;
-background-color: red;
-margin:0px -8px 0px 0px;
-display: inline-block;
-}
-.theater-line-detail{
-height:540px;
-width:1152px;
-margin:0px -8px 0px -8px;
-background-color:black;
-display: inline-block;
+width:960.5px;
+height:200px;
+display:inline-block;
+margin:0px -2px;
+background-color:orange;
+position:relative;
+text-align: center;
+vertical-align: middle;
+padding-top:75px;
+line-height:75px;
 
 }
-*/
+
 
 /*Vrchni odkazy*/
 .menu#vrchni{
@@ -166,6 +217,7 @@ font-size: 25px;
     font-family: 'Roboto', sans-serif;
     color:black;
     font-size: 25px;
+    text-align:justify;
 }
 /*text v cernych prouzcich seznamu interpretu*/
 .nadpisWhite{
@@ -175,8 +227,7 @@ font-size:80px;
 }
 
 
-/* Celkove bych to stylizoval co cernobila/sepiova pokud s tim budou souhlasit samozrejme; Zda se mi to ze to sedi k tomu prostoru i k ty akci, samozrejme bych pouzil i barvy, ale ta cernobila/sepiova spolecne
-s tim industrialnim fontem co jsem nasel si myslim pusobi dost dobre, ale tezko rict jak to bude vsechno vypadat az se to prestylizuje na jinou grafiku nez SW wallpapery*/
+
 
 #gallery-container{
 width:auto;
