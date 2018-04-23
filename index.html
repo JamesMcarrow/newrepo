@@ -22,17 +22,18 @@
       <li class="menu-li"><a class="menu" id="odkazy" href="#druhy">LINEUP</a></li>
       <li class="menu-li"><a class="menu" id="odkazy" href="#program">PROGRAM</a></li>
       <li class="menu-li"><a class="menu" id="odkazy" href="#prvni">O TRATI</a></li>
-      <li id="home-button"><a href="#prvni"><img src="logo_trat_hlavni.png"
+      <li id="home-button"><a href="#prvni"><img src="logo_trat_hlavni_web.png"
                                                  alt="trat"
                                                  style="height:50px;
                                                         width:auto;
                                                         opacity:1;
-                                                        z-index:1;">
+                                                        z-index:2;">
                             </a></li>
     </ul>
     <!--nejake info o trati-->
     <div style="position: absolute;
                 display: inline-block;
+                z-index: 1;
                 width: 100%;
                 height: 50px;
                 margin-top: 70px;
@@ -68,7 +69,8 @@
               top: 120px;
 
               margin-top: 0px;
-              margin-right: 40%;
+              margin-left: 3%;
+              margin-right: 33%;
               padding-top: 10px;
               padding-left: 15px;
               padding-right: 15px;
@@ -94,6 +96,18 @@
        repellendus. Et harum quidem rerum facilis est et expedita distinctio.
     </p>
 
+    <img src="perner_transparent_web.png"
+         alt="perner"
+         style="display:inline;
+                position: absolute;
+                z-index: 0;
+                right: 0px;
+                bottom: 200px;
+                
+                height: auto;
+                width: 30%;
+         ">
+    
   <!--podpor-->
     <div style="position: absolute;
                 display: block;
@@ -134,17 +148,16 @@
         </p>
         
         <!--hithit-->
-        <iframe style="border: 0;
+        <iframe scrolling="no"
+                src="https://www.hithit.com/cs/project/4725/cs/studentsky-festival-trat/embedded/miniTeaser"
+                style="border: 0;
                        position: relative;
                        float: right;
                        width: 200px;
                        height: 100%;
                    
                        background-color: white;
-                "
-            scrolling="no"
-            src="https://www.hithit.com/cs/project/4725/cs/studentsky-festival-trat/embedded/miniTeaser">
-           
+                ">    
         </iframe> 
     </div>  
   
@@ -201,45 +214,74 @@
   </div>
 
   <div id="druhy">
-
+      
+      <div style="display: inline;
+                  position: absolute;
+                  left: 0px;
+                  height: 100%;
+                  width: 50%;
+                  
+                  background-image:url(vneumicky_web.jpg);
+                  background-position: center;
+                  background-size: cover;
+           ">     
+      </div>
+      
       <div class="prava">
-          <br>
-          <br>
-          <p class="nadpis" style="float:right; margin-right:50px;">Vneumicky</p>
-
-        </div>
+          <p class="nadpis" style="float:right; margin-right:70px; margin-top:70px;">VNEUMICKY</p>
 
       </div>
+  </div>
 
   <div id="treti">
 
+      <div style="display: inline;
+                  position: absolute;
+                  right: 0px;
+                  height: 100%;
+                  width: 50%;
+                  
+                  background-image:url(market_web.jpg);
+                  background-position: center;
+                  background-size: cover;
+           ">     
+      </div>
+      
       <div class="leva">
-          <br>
-          <br>
-          <p class="nadpis" style="float:left; margin-left:50px;">Umprůjem</p>
-
+          <p class="nadpis" style="float:left; margin-left:70px; margin-top: 70px;">MARKET</p>
+          
+          <p class="text" style="position: absolute; margin-left: 70px; margin-top: 140px; margin-right: 50%">
+              |▬M▬▬▬▬▬▬▬▬|<br>
+              |▬▬A▬▬▬▬▬▬▬|<br>
+              |▬▬▬R▬▬▬▬▬▬|<br>
+              |▬▬▬▬K▬▬▬▬▬|<br>
+              |▬▬▬▬▬E▬▬▬▬|<br>
+              |▬▬▬▬▬▬T▬▬▬|<br>
+              “Lepší než Lil Xan.”<br>
+              Garage disco, death jazz, post-punk, funky, big beat, family-friendly pop shits for anxiety kids™ aka skoro nikdo vlastně pořádně neví, co Market® hraje, ale prý je to v pohodě
+</p>
         </div>
 
       </div>
   <!-- Prouzky interpretu; da se dat vic pokud pribudou; Vizualy udelat jinak; cast CSS ve style v HTML, zbytek v dokumentu .line #ostatni -->
   <div id="ostatni">
 
-      <div class="line" id="first-artist" style="background-color:#110D15; text-align:right; padding-right:50px;"><span class="nadpisWhite">Martin Stündl</span></div>
+      <div class="line" id="first-artist" style="background-color:#110D15; text-align:right; padding-right:50px;"><span class="nadpisWhite">MARTIN STÜNDL</span></div>
           <div class="line-artist-detail" id="first-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
 
-      <div class="line" id="second-artist" style="background-color:#DCD5EB; padding-left:50px;"><span class="nadpis">Martin Dostál</span></div>
+      <div class="line" id="second-artist" style="background-color:#DCD5EB; padding-left:50px;"><span class="nadpis">MARTIN DOSTÁL</span></div>
           <div class="line-artist-detail" id="second-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
 
-      <div class="line" id="third-artist" style="background-color:#110D15; text-align:right; padding-right:50px;"><span class="nadpisWhite">Steaks de bison</span></div>
+      <div class="line" id="third-artist" style="background-color:#110D15; text-align:right; padding-right:50px;"><span class="nadpisWhite">STEAKS de BISON</span></div>
            <div class="line-artist-detail" id="third-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
 
-      <div class="line" id="fourth-artist" style="background-color:#DCD5EB; padding-left:50px;"><span class="nadpis">Market</span></div>
+      <div class="line" id="fourth-artist" style="background-color:#DCD5EB; padding-left:50px;"><span class="nadpis">UMPRŮJEM</span></div>
            <div class="line-artist-detail" id="fourth-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
 
-      <div class="line" id="fifth-artist" style="background-color:#110D15; text-align:right; padding-right:50px;"><span class="nadpisWhite">Antitalent </span></div>
+      <div class="line" id="fifth-artist" style="background-color:#110D15; text-align:right; padding-right:50px;"><span class="nadpisWhite">ANTITALENT </span></div>
            <div class="line-artist-detail" id="fifth-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
 
-      <div class="line" id="sixth-artist" style="background-color:#DCD5EB; padding-left:50px;"><span class="nadpis">Guilty Echoes</span></div>
+      <div class="line" id="sixth-artist" style="background-color:#DCD5EB; padding-left:50px;"><span class="nadpis">GUILTY ECHOES</span></div>
            <div class="line-artist-detail" id="sixth-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
 
 
