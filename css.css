@@ -11,9 +11,7 @@ height:9000px;
 ::-webkit-scrollbar { 
     display: none; 
 }
-html
-{overflow: -moz-scrollbars-none;
-}
+
 
 /*uplny uvodni obrazek; vymenit treba za uvodni fotku udalosti na fb ale do cernobile nebo nejak upravit aby se to hodilo*/
 #prvni{
