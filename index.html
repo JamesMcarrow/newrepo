@@ -15,6 +15,7 @@
   <title>Trať - studentský festival</title>
   </head>
   <body>
+  <!--prvni-->    
   <div id="prvni">
       <!--horní lišta-->
       <ul class="menu" id="vrchni">
@@ -28,7 +29,7 @@
                                                  style="height:50px;
                                                         width:auto;
                                                         opacity:1;
-                                                        z-index:2;">
+                                                        z-index:3;">
                             </a>
       </li>
     </ul>
@@ -179,7 +180,7 @@
   
   </div>
   
-      
+  <!--program-->    
   <div id="program">
     <p class="nadpis"
        style="display: block;
@@ -228,7 +229,8 @@
     </div>
 
   </div>
-
+  
+  <!--druhy = VNEUMICKY-->
   <div id="druhy">
       
       <div style="display: inline;
@@ -248,9 +250,23 @@
           <!--VNEUMICKY-->
           <p class="nadpis2" style="float:left; margin-left:50%; margin-top:86px; display: inline;">HUDBA</p>
           <p class="nadpis" style="float:right; margin-right:70px; margin-top:70px; display: inline;">VNEUMICKY</p>
+      
+          <p class="text" style="position: absolute; margin-right: 70px; margin-top: 140px; margin-left: 50%">
+            VNEUMICKY je složení tří žaludes z Plzně. Yung Jekinse a.k.a na sobě
+            Gucci z Tunisu, Vykrut Smajl s buchnou v kapse a DJ Zmydabeats. Od 
+            prvního tracku uběhly 2 roky a nic se nezmění na bizarnostech v hudbě a klipech.
+          </p>
+          
+          <a href="https://www.facebook.com/Vneumicky/"
+             class="webLinkR">
+              <img src="www_link_icon_B_web.png"
+                   alt="WEB"
+                   style="height: 40px;">
+          </a>
       </div>
   </div>
 
+  <!--treti = MARKET-->
   <div id="treti">
 
       <div style="display: inline;
@@ -258,6 +274,7 @@
                   right: 0px;
                   height: 100%;
                   width: 50%;
+    /*zde nutny*/ z-index: -1;
                   
                   background-image:url(market_web.jpg);
                   background-position: center;
@@ -265,23 +282,31 @@
            ">     
       </div>
       
+      <!--MARKET-->
       <div class="leva">
           
-          <!--MARKET-->
           <p class="nadpis2" style="float:right; margin-right:50%; margin-top:86px; display: inline;">HUDBA</p>
           <p class="nadpis" style="float:left; margin-left:70px; margin-top: 70px;">MARKET</p>
           
           <p class="text" style="position: absolute; margin-left: 70px; margin-top: 140px; margin-right: 50%">
               “Lepší než Lil Xan.”<br>
               Garage disco, death jazz, post-punk, funky, big beat, family-friendly pop shits for anxiety kids™ aka skoro nikdo vlastně pořádně neví, co Market® hraje, ale prý je to v pohodě
-</p>
-        </div>
-
+          </p>
+          
+          <a href="https://marketus.bandcamp.com"
+             class="webLinkL">
+              
+            <img src="www_link_icon_B_web.png"
+                 alt="WEB"
+                 style="height: 40px;">
+          </a>
       </div>
-  <!-- Prouzky interpretu; da se dat vic pokud pribudou; Vizualy udelat jinak; cast CSS ve style v HTML, zbytek v dokumentu .line #ostatni -->
+  </div>
+  
+<!--Prouzky rozklik. interpretu !!!potreba opravit rozklik. divy!!!-->
   <div id="ostatni">
 
-      <!--prvni pruh ROMAN STETINA-->
+<!--prvni pruh ROMAN STETINA-->
       <a href="#first-artist">
         <div class="line"
              id="first-artist"
@@ -301,11 +326,45 @@
         </div>
       </a>
       
-      <div class="line-artist-detail" id="first-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px">
+      <!--RŠ info-->
+      <div class="line_artist_detail_R"
+           id="first-artist-detail"
+           style="background-color:white;">
+           
+          <div class="line_artist_detail_picture"
+               style="left: 0px;
+                      background-color: blue;
+                      /*background-image: url(); https://cdn.i0.cz/src/public-data/14/97/535a84e13211b6fd45dc2fc7acca_base_optimal.jpg*/
+               ">
+          </div>
           
+          <div class="line_artist_detail_info"
+               style="right: 0px;">
+              
+              <p class="text"
+                 style="margin-top: 15px;
+                        padding-left: 70px;
+                        padding-right: 70px;">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
+                  faucibus molestie nisl. Proin pede metus, vulputate nec, fermentum 
+                  fringilla, vehicula vitae, justo. Nunc dapibus tortor vel mi dapibus 
+                  sollicitudin. Integer malesuada. Fusce tellus odio, dapibus id 
+                  fermentum quis, suscipit id erat. Class aptent taciti sociosqu 
+                  ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+                  Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam.
+                  Nullam eget nisl.
+              </p>
+          </div>    
+          
+          <a href="http://www.romanstetina.com"
+             class="webLinkR">
+              <img src="www_link_icon_B_web.png"
+                   alt="WEB"
+                   style="height: 40px;">
+          </a>
       </div>
 
-      <!--druhy pruh MARTIN DOSTAL-->
+<!--druhy pruh MARTIN DOSTAL-->
       <a href="#second-artist">
         <div class="line"
              id="second-artist"
@@ -325,9 +384,45 @@
         </div>
       </a>    
       
-      <div class="line-artist-detail" id="second-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
+      <!--MD info-->
+      <div class="line_artist_detail_L"
+           id="second-artist-detail"
+           style="background-color:black;">
+           
+          <div class="line_artist_detail_picture"
+               style="right: 0px;
+                      background-color: blue;
+                      /*background-image: url(); MD obrazek*/
+               ">
+          </div>
+          
+          <div class="line_artist_detail_info"
+               style="left: 0px;">
+              
+              <p class="textW"
+                 style="margin-top: 15px;
+                        padding-left: 70px;
+                        padding-right: 70px;">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam
+                  lectus justo, vulputate eget mollis sed, tempor sed magna. Nemo 
+                  enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut 
+                  fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
+                  sequi nesciunt. Aliquam ante. Ut enim ad minima veniam, quis nostrum 
+                  exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid 
+                  ex ea commodi consequatur? Duis condimentum augue id magna semper 
+                  rutrum. Aliquam erat volutpat.
+              </p>
+          </div>    
+<!--MD web-->
+          <a href="" 
+             class="webLinkL">
+              <img src="www_link_icon_W_web.png"
+                   alt="WEB"
+                   style="height: 40px;">
+          </a>
+      </div>
 
-      <!--treti pruh ILEGUM-->
+<!--treti pruh ILEGUM-->
       <a href="#third-artist">
         <div class="line"
              id="third-artist"
@@ -347,9 +442,46 @@
         </div>
       </a>
       
-      <div class="line-artist-detail" id="third-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
+      <!--ILEGUM info-->
+      <div class="line_artist_detail_R"
+           id="third-artist-detail"
+           style="background-color:white;">
+           
+          <div class="line_artist_detail_picture"
+               style="left: 0px;
+                      background-image: url(ilegum_web.jpg);
+               ">
+          </div>
+          
+          <div class="line_artist_detail_info"
+               style="right: 0px;">
+              
+              <p class="text"
+                 style="margin-top: 15px;
+                        padding-left: 70px;
+                        padding-right: 70px;">
+                  Je nezávislé loutkové divadlo pro děti i dospělé. Hrajeme venku 
+                  i vevnitř, v nemocnicích, ve školách, školkách a všude jinde. 
+                  Soustavně zkoumá možnosti loutkového divadla a využíváme nejrůznější 
+                  typy loutek včetně tradičních marionet.<br>
+                  <span style="padding-top: 10px;
+                               display: block; 
+                        ">
+                      Vystoupí s novým představením Malenka.
+                  </span>
 
-      <!--ctvrty pruh KINEDOK-->
+              </p>
+          </div>
+          
+          <a href="https://ilegum.webnode.cz/"
+             class="webLinkR">
+              <img src="www_link_icon_B_web.png"
+                   alt="WEB"
+                   style="height: 40px;">
+          </a>
+      </div>   
+          
+<!--ctvrty pruh KINEDOK-->
       <a href="#fourth-artist">
         <div class="line"
              id="fourth-artist"
@@ -369,7 +501,40 @@
         </div>
       </a>
       
-      <div class="line-artist-detail" id="fourth-artist-detail" style="background-color:blue; text-align:center; padding-right:150px; padding-left:150px"></div>
+      <!--KINEDOK info-->
+      <div class="line_artist_detail_L"
+           id="fourth-artist-detail"
+           style="background-color:black;">
+           
+          <div class="line_artist_detail_picture"
+               style="right: 0px;
+                      background-color: blue;
+                      /*background-image: url(); kinedok obrazek*/
+               ">
+          </div>
+          
+          <div class="line_artist_detail_info"
+               style="left: 0px;">
+              
+              <p class="textW"
+                 style="margin-top: 15px;
+                        padding-left: 70px;
+                        padding-right: 70px;">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam
+                  dictum tincidunt diam. Aliquam erat volutpat. Nullam eget nisl.
+                  Fusce consectetuer risus a nunc. In rutrum. Sed convallis magna
+                  eu sem. Fusce aliquam vestibulum ipsum. Duis viverra diam non 
+                  justo. Morbi leo mi, nonummy eget tristique non, rhoncus non leo.
+              </p>
+          </div>    
+
+          <a href="https://kinedok.net/cz/films/detail/12" 
+             class="webLinkL">
+              <img src="www_link_icon_W_web.png"
+                   alt="WEB"
+                   style="height: 40px;">
+          </a>
+      </div>
 
   </div>
 
