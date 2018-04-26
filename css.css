@@ -1,6 +1,6 @@
 /* CSS Document */
 body{
-background-image:url("trat_pozadi_web.png");
+background-image:url("trat_pozadi_web.jpg");
 background-size:cover;
 background-position: center top;
 background-attachment:fixed;
@@ -210,6 +210,9 @@ position: absolute;
 width: 100%;
 height: 50%;
 bottom: 0px;
+
+background-position: center;
+background-size: cover;
 }
 
 .tabText{
@@ -420,6 +423,54 @@ float:right;
 background-color:red;
 margin:0px 0px 0px 0px;
 }
+
+#kontakty{
+position: relative;
+bottom: 0px;
+height: 100vh;
+width: auto;
+margin: 0px -8px 0px -8px;
+}
+
+.kontDiv{
+display: grid;
+position: absolute;
+width: 100%;
+height: 40%;
+bottom: 0px;
+grid-template-rows: auto 130px;
+
+background-image:url("vzorek_pozadi_web.png");
+background-position: center;
+background-size: cover;
+}
+
+.kontInfo{
+ width: 100%
+     
+}
+
+.kontPartneri{
+display: grid;
+position: absolute;
+width: 100%;
+height: 100px;
+bottom: 0px;
+grid-template-columns: repeat(5, 1fr);
+
+background-color: rgba(255, 255, 255, 0.8);
+}
+
+.kont1Par{
+text-align: center;
+padding: 10px 0 10px 0;
+}
+
+.kontParObr{
+width: auto;
+height: 80px;
+}
+
 a:link{
 color:black;
 }
