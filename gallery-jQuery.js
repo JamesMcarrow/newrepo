@@ -1,7 +1,9 @@
 // JavaScript Document
+ 
+$(document).ready(function() {
+ 
  $('.line-artist-detail').hide();
 
-$(document).ready(function() {
  //galerie
         $("#1").click(function() {
               $('#gallery-full').css("background-image","url('gal_img_1.jpg')");
