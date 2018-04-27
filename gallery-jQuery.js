@@ -1,5 +1,5 @@
 // JavaScript Document
-
+ $('.line-artist-detail').hide();
 
 $(document).ready(function() {
  //galerie
@@ -30,7 +30,7 @@ $(document).ready(function() {
 // konec galerie
 // rozkliky
 
-        $('.line-artist-detail').hide();
+       
 
         $('#first-artist').click(function(){
 
