@@ -4,8 +4,9 @@ background-image:url("trat_pozadi_web.jpg");
 background-size:cover;
 background-position: center top;
 background-attachment:fixed;
-height:7000px;
+height:5500px;
 z-index: -2;
+overflow-x: hidden;
 }
 
 /*scrollbar*/
@@ -147,7 +148,7 @@ position: absolute;
 left: 15px;
 bottom: 15px;
 height: 40px;
-width: 40px;    
+width: 40px;
 }
 
 .webLinkR{
@@ -155,7 +156,7 @@ position: absolute;
 right: 15px;
 bottom: 15px;
 height: 40px;
-width: 40px;    
+width: 40px;
 }
 
 /*rozdeleni u dvou hlavnich interpretu; domyslet responzivitu*/
@@ -445,7 +446,7 @@ background-size: cover;
 
 .kontInfo{
  width: 100%
-     
+
 }
 
 .kontPartneri{
@@ -489,4 +490,96 @@ margin-top:10px;
 margin-left:15px;
 z-index:3;
 position:fixed;
+}
+
+
+@media(max-width:1550px){
+.nadpisW{
+font-size:30px;
+}
+.nadpis{
+font-size:30px;
+}
+.nadpis2{
+font-size:15px;
+}
+.nadpisW2{
+font-size:15px;
+}
+
+}
+
+@media(max-width:1250px){
+.menu#odkazy{
+font-size:22px;
+}
+.kontParObr{
+height:50px;
+}
+}
+@media(max-width:1050px){
+.menu#odkazy{
+font-size:18px;
+}
+.program-li{
+font-size:20px;
+}
+.nadpisW{
+font-size:25px;
+}
+.nadpis{
+font-size:25px;
+}
+.nadpis2{
+font-size:12px;
+}
+.nadpisW2{
+font-size:12px;
+}
+.text{
+font-size:20px;
+}
+.textW{
+font-size:20px;
+}
+.nadpisW3{
+font-size:12px;
+}
+.nadpisW12{
+font-size:20px;
+}
+.nadpis12{
+font-size:20px;
+}
+.nadpis3{
+font-size:12px;
+}
+}
+@media(max-width:900px){
+.menu#odkazy{
+font-size:14px;
+}
+.nadpisW{
+font-size:20px;
+}
+.nadpis{
+font-size:20px;
+}
+}
+@media(max-width:735px){
+.nadpis{
+font-size:15px;
+}
+.nadpisW{
+font-size:15px;
+}
+.menu#odkazy{
+font-size:10px;
+}
+.program-li{
+font-size:15px;
+}
+.text{
+font-size:18px;
+}
 }

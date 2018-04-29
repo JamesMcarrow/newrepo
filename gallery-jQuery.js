@@ -1,38 +1,14 @@
 // JavaScript Document
- 
+
 $(document).ready(function() {
- 
- $('.line-artist-detail').hide();
 
- //galerie
-        $("#1").click(function() {
-              $('#gallery-full').css("background-image","url('gal_img_1.jpg')");
 
-        });
 
-        $("#2").click(function() {
-              $('#gallery-full').css("background-image","url('gal_img_2.jpg')");
 
-        });
-
-        $("#3").click(function() {
-              $('#gallery-full').css("background-image","url('gal_img_3.jpg')");
-
-        });
-
-        $("#4").click(function() {
-              $('#gallery-full').css("background-image","url('gal_img_4.jpg')");
-
-        });
-
-        $("#5").click(function() {
-              $('#gallery-full').css("background-image","url('gal_img_5.jpg')");
-
-        });
-// konec galerie
 // rozkliky
 
-       
+        $('.line_artist_detail_L').hide();
+        $('.line_artist_detail_R').hide();
 
         $('#first-artist').click(function(){
 
@@ -100,7 +76,7 @@ $(document).ready(function() {
               $('#fifth-artist-detail').hide(150);
           });
 // divadlo prouzky
-        
+
 
 //smooth scroll
           $('a[href*="#"]')
