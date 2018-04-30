@@ -4,9 +4,9 @@ background-image:url("trat_pozadi_web.jpg");
 background-size:cover;
 background-position: center top;
 background-attachment:fixed;
-height:5500px;
+height:fit-content;
 z-index: -2;
-overflow-x: hidden;
+/*overflow-x: hidden;*/
 }
 
 /*scrollbar*/
@@ -23,6 +23,17 @@ margin:-8px -8px 0px -8px;
 background-image:url("vzorek_pozadi_web.png");
 background-position: center;
 background-size: cover;
+}
+
+.perner{
+display:inline;
+position: absolute;
+z-index: 0;
+right: 0px;
+bottom: 0px;
+
+height: 115%;
+width: auto;    
 }
 /*pruhledny div na pozadi; dopsat text*/
 #program{
@@ -428,7 +439,7 @@ position: relative;
 bottom: 0px;
 height: 100vh;
 width: auto;
-margin: 0px -8px 0px -8px;
+margin: 0px -8px -8px -8px;
 }
 
 .kontDiv{
@@ -445,8 +456,9 @@ background-size: cover;
 }
 
 .kontInfo{
- width: 100%
-
+ width: 100%;
+ height: 100%;
+position: relative;
 }
 
 .kontPartneri{
@@ -579,7 +591,12 @@ font-size:10px;
 .program-li{
 font-size:15px;
 }
+.perner{
+height:100%;
+right:-150px;
+}
 .text{
 font-size:18px;
 }
 }
+

@@ -66,19 +66,26 @@
         </p>
     </div>
 
+    <div style="position: absolute;
+                top:120px;
+                bottom: 100px;
+                width: 100%;
+                overflow-x: hidden;">
+        
     <!--dalsi obecne info-->
     <p class="text"
        style="display: block;
               position: absolute;
-              top: 120px;
+              /*top: 120px;*/
 
               margin-top: 0px;
-              margin-left: 3%;
-              margin-right: 33%;
-              padding-top: 10px;
+              margin-left: 55px;
+              margin-right: 35%;
+              max-height: 100%;
               padding-left: 15px;
               padding-right: 15px;
               overflow: auto;
+              z-index: 1;
 
               background-color: rgba(255, 255, 255, 0.8);
 
@@ -100,17 +107,10 @@
        repellendus. Et harum quidem rerum facilis est et expedita distinctio.
     </p>
 
-    <img src="perner_transparent_web.png"
-         alt="perner"
-         style="display:inline;
-                position: absolute;
-                z-index: 0;
-                right: 0px;
-                bottom: 100px;
-
-                height: auto;
-                width: 30%;
-         ">
+    <img class="perner"
+         src="perner_transparent_web.png"
+         alt="PERNER">
+  </div>
 
   <!--podpor-->
   <a href="https://www.hithit.com/cs/project/4725/studentsky-festival-trat">
@@ -619,7 +619,15 @@
     <div class="kontDiv">
 
         <div class="kontInfo">
-
+            
+            <img src="trat_mapa_web.jpg"
+                 alt="MAPA"
+                 style="position: absolute;
+                        height: 100%;
+                        width: auto;
+                        padding-left: 15px;
+                        right: 0px;
+                 ">
         </div>
 
         <!--partneri projektu:-->
