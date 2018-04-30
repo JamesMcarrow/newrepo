@@ -6,6 +6,7 @@ background-position: center top;
 background-attachment:fixed;
 height:fit-content;
 z-index: -2;
+overflow: scroll;
 /*overflow-x: hidden;*/
 }
 
@@ -578,7 +579,7 @@ font-size:20px;
 font-size:20px;
 }
 }
-@media(max-width:735px){
+@media handheld and (max-width:735px){
 .nadpis{
 font-size:15px;
 }
