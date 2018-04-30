@@ -579,7 +579,7 @@ font-size:20px;
 font-size:20px;
 }
 }
-@media handheld and (max-width:735px){
+@media (max-width:735px){
 .nadpis{
 font-size:15px;
 }
