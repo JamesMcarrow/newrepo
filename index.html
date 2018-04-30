@@ -19,6 +19,7 @@
   <!--prvni-->
   <div id="prvni">
       <!--horní lišta-->
+      <div>
       <ul class="menu" id="vrchni">
       <li class="menu-li"><a class="menu" id="odkazy" href="#kontakty">KONTAKTY</a></li>
       <li class="menu-li"><a class="menu" id="odkazy" href="#gallery-container">GALERIE</a></li>
@@ -27,24 +28,14 @@
       <li class="menu-li"><a class="menu" id="odkazy" href="#prvni">O TRATI</a></li>
       <li id="home-button"><a href="#prvni"><img src="logo_trat_hlavni_web.png"
                                                  alt="trat"
-                                                 style="height:50px;
-                                                        width:auto;
-                                                        opacity:1;
-                                                        z-index:3;">
+                                                 id="logo_trat">
                             </a>
       </li>
     </ul>
+      </div>
 
     <!--nejake info o trati-->
-    <div style="position: absolute;
-                display: inline-block;
-                z-index: 1;
-                width: 100%;
-                height: 50px;
-                margin-top: 70px;
-
-                background-color: rgba(255, 255, 255, 0.8);
-         ">
+    <div id="zaklInfo">
 
         <p class="nadpis2"
            style="display: inline;
@@ -67,31 +58,11 @@
         </p>
     </div>
 
-    <div style="position: absolute;
-                top:120px;
-                bottom: 100px;
-                width: 100%;
-                overflow-x: hidden;">
+    <div id="info">
         
     <!--dalsi obecne info-->
     <p class="text"
-       style="display: block;
-              position: absolute;
-              /*top: 120px;*/
-
-              margin-top: 0px;
-              margin-left: 55px;
-              margin-right: 35%;
-              max-height: 100%;
-              padding-left: 15px;
-              padding-right: 15px;
-              overflow: auto;
-              z-index: 1;
-
-              background-color: rgba(255, 255, 255, 0.8);
-
-              text-align: justify;
-      ">
+       id="infoText">
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class
        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
        hymenaeos. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis
@@ -128,14 +99,8 @@
 
         <img src="logo_hithit_web.png"
              alt="logo hithit"
-             style="position: relative;
-                    float: left;
-                    height: 80px;
-                    width: auto;
-                    margin-left: 15px;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-             ">
+             style="float: left;"
+             id="hithitImg">
 
 
         <p class="nadpis2"
@@ -149,19 +114,12 @@
 
                   color: white;
            ">
-            Pokud se vám náš nápad líbí, podpořte nás.
+            Pokud se Vám náš nápad líbí, podpořte nás.
         </p>
 
         <img src="logo_hithit_web.png"
              alt="logo hithit"
-             style="position: relative;
-                    float: right;
-                    height: 80px;
-                    width: auto;
-                    margin-right: 15px;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-             ">
+             id="hithitImg">
 
         <!--hithit-->
         <!--<iframe scrolling="no"

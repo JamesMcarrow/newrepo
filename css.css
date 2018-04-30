@@ -1,18 +1,20 @@
 /* CSS Document */
 body{
+    position: absolute;
+    top:0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
 background-image:url("trat_pozadi_web.jpg");
 background-size:cover;
-background-position: center top;
+background-position: center;
 background-attachment:fixed;
-height:fit-content;
+/*height:100%;
+width: 100%;*/
 z-index: -2;
-
+overflow-y: scroll;
 overflow-x: hidden;
 }
-
-/*scrollbar*/
-
-
 
 /*uplny uvodni obrazek; vymenit treba za uvodni fotku udalosti na fb ale do cernobile nebo nejak upravit aby se to hodilo*/
 #prvni{
@@ -24,6 +26,52 @@ margin:-8px -8px 0px -8px;
 background-image:url("vzorek_pozadi_web.png");
 background-position: center;
 background-size: cover;
+}
+
+#zaklInfo{
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    margin-top: 70px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#info{
+position: absolute;
+top:120px;
+bottom: 100px;
+width: 100%;
+/*overflow-x: hidden;*/    
+}
+
+#infoText{
+display: block;
+              position: absolute;
+              /*top: 120px;*/
+
+              margin-top: 0px;
+              margin-left: 55px;
+              margin-right: 35%;
+              /*! max-height: 100%; */
+              padding-left: 15px;
+              padding-right: 15px;
+              overflow: auto;
+              z-index: 1;
+
+              background-color: rgba(255, 255, 255, 0.8);
+
+              text-align: justify;
+}
+
+#hithitImg{
+position: relative;
+                    float: right;
+                    height: 80px;
+                    width: auto;
+                    margin: 10px 15px;
 }
 
 .perner{
@@ -328,6 +376,13 @@ line-height:75px;
     line-height:70px;
     text-align: center;
 }
+
+#logo_trat{
+height:50px;
+width:auto;
+opacity:1;
+z-index:3;    
+}
 /*vsechen text krome odkazu na vrchu*/
 .nadpis{
 font-family: 'Krona one', monospace;
@@ -579,7 +634,7 @@ font-size:20px;
 font-size:20px;
 }
 }
-@media handheld, (max-width:735px){
+@media handheld, (max-width:735px) and (orientation: landscape){
 .nadpis{
 font-size:15px;
 }
@@ -593,11 +648,74 @@ font-size:10px;
 font-size:15px;
 }
 .perner{
-height:100%;
-right:-150px;
+height:125%;
+
+right: -125px;
 }
 .text{
 font-size:18px;
+}
+
+#prvni{
+height: auto;
+display: grid;
+grid-template-rows:40px 30px auto 100px;
+}
+
+.menu#odkazy{
+height: 40px;
+line-height: 40px;
+}
+
+#home-button{
+margin-top: 5px;
+height: 30px;        
+}
+
+#logo_trat{
+height: 30px;        
+}
+
+#zaklInfo{
+height: 30px;
+margin-top: 0px;    
+position: relative;
+}
+
+#info{
+position: relative;
+height: auto;
+top:initial;
+bottom: initial;
+overflow-x: hidden;
+}
+
+#infoText{
+position: relative;
+/*! height: 100%; */
+margin-bottom: 0px;
+margin-left: 20px;
+padding: 10px;
+}
+
+#hithitImg{
+height: 50px;
+margin: 25px 15px;
+}
+
+#program{
+height: auto;
+}
+}
+
+@media handheld, (max-width:500px), (orientation: portrait){
+.menu{display: none;
+}
+#kontakty{display: none;
+}
+.perner{
+height:100%;
+right:-150px;
 }
 }
 
