@@ -6,8 +6,8 @@ body{
     right: 0px;
     bottom: 0px;
 background-image:url("trat_pozadi_web.jpg");
-background-size:cover;
-background-position: center;
+background-size:  cover !important;
+background-position: 50% 50%;
 background-attachment:fixed;
 /*height:100%;
 width: 100%;*/
@@ -126,21 +126,33 @@ width: auto;
 }
 /*pruhledny div na pozadi; dopsat text*/
 #program{
-background-color:white;
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: 140px auto;
+grid-template-areas: "nadp nadp"
+                     "splitL splitR";
 width:auto;
-height:100vh;
+height:auto;
 margin:0px -8px 0px -8px;
 position:relative;
 text-align:center;
-background-color: rgba(255, 255, 255, 0.5);
+background-color: rgba(255, 255, 255, 0.65);
+}
+
+#progNadpis{
+display: block;
+position: relative;
+margin-top: 0px;
+margin-bottom: 0px;
+padding-top: 70px;
 }
 /*sloupce programu*/
 .program-split{
-width:50%;
+width:100%;
 display:inline-block;
 height:auto;
 background-color:none;
-margin:0px -2px;
+/*! margin:0px -2px; */
 text-align: center;
 }
 .program-ul{
@@ -148,7 +160,7 @@ list-style-type:none;
 text-align:left;
 float:left;
 
-margin-top: 0px;
+margin-top: 15px;
 margin-bottom: 15px;
 padding-left: 70px;
 }
@@ -156,7 +168,7 @@ padding-left: 70px;
 font-size:25px;
 font-family: 'Roboto', monospace;
 color:black;
-padding-top:10px;
+padding-bottom:10px;
 }
 
 /*dva hlavni intepreti; pozadi jejich obrazek; nejaky lepsi*/
@@ -706,7 +718,7 @@ font-size:20px;
 font-size:20px;
 }
 }
-@media handheld, (max-width:735px) and (orientation: landscape){
+@media handheld, (max-width:735px), (orientation: landscape){
 .nadpis{
 font-size:15px;
 }
@@ -717,7 +729,7 @@ font-size:15px;
 font-size:10px;
 }
 .program-li{
-font-size:15px;
+font-size:17px;
 }
 .perner{
 height:125%;
@@ -787,6 +799,25 @@ margin: 25px 0px;
 
 #program{
 height: auto;
+grid-template-rows: 80px auto;
+}
+
+#progNadpis{
+
+    padding-top: 45px;
+    font-size: 25px;
+    /*! line-height: 25px; */
+}
+
+#progSplitNad{
+margin: 0px;
+font-size: 20px;
+line-height: 20px;
+}
+
+.program-ul{
+margin: 15px;
+padding: initial;
 }
 
 .kontPartneri{
@@ -808,7 +839,7 @@ padding: 13px 5px 13px 0px;
 
 }
 
-@media handheld, (max-width:500px), (orientation: portrait){
+@media handheld, (max-width:500px) and (orientation: portrait){
 
 #prvni{
 height: auto;
@@ -882,6 +913,7 @@ overflow-y: hidden;
     text-align: justify;
     bottom: 0px;
     top: 0px;
+    font-size: 18px;
 }
 
 .perner{
@@ -909,6 +941,37 @@ margin: 0px;
     
     height: 30px;
     margin: 35px 0px;
+}
+
+#program{
+height: auto;
+grid-template-rows: 85px auto auto;
+grid-template-columns: 100%;
+grid-template-areas: "nadp" "splitL" "splitR";
+}
+
+#progNadpis{
+
+    padding-top: 45px;
+    font-size: 25px;
+    /*! line-height: 25px; */
+    /*! padding-bottom: 15px; */
+}
+
+#progSplitNad{
+margin: 0px;
+font-size: 20px;
+line-height: 20px;
+/*! background-color: rgba(255, 255, 255, 0.8); */
+}
+
+.program-ul{
+margin: 15px;
+padding: initial;
+}
+
+.program-li{
+font-size: 17px;
 }
 
 #kontakty{display: none;
