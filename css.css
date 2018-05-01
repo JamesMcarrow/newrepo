@@ -39,6 +39,22 @@ background-size: cover;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+#zaklInfoL{
+display: inline;
+                  float: left;
+                  margin-left: 15px;
+                  margin-top: 10px;
+                  margin-bottom: 10px;    
+}
+
+#zaklInfoR{
+display: inline;
+                   float: right;
+                   margin-right: 15px;
+                   margin-top: 10px;
+                   margin-bottom: 10px;    
+}
+
 #info{
 position: absolute;
 top:120px;
@@ -66,12 +82,36 @@ display: block;
               text-align: justify;
 }
 
+#hithitCont{
+position: absolute;
+                display: grid;
+                grid-template-columns: 150px auto 150px;
+                text-align: center;
+                bottom: 0px;
+                width: 100%;
+                height: 100px;
+
+                background-color: rgb(96, 217, 249);    
+}
+
 #hithitImg{
 position: relative;
                     float: right;
                     height: 80px;
                     width: auto;
                     margin: 10px 15px;
+}
+
+#hithit{
+display: inline;
+                  position: relative;
+                  margin-top: 0px;
+                  overflow-x: hidden;
+
+                  text-align: center;
+                  line-height: 100px;
+
+                  color: white;
 }
 
 .perner{
@@ -383,6 +423,25 @@ width:auto;
 opacity:1;
 z-index:3;    
 }
+
+#menu_mobile{
+position: relative;
+top:0px;
+display: none;
+width: 100%;
+grid-template-rows: repeat(5, 30);
+
+background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menu_mobileItem{
+font-family: 'Krona one', sans-serif;
+font-size:15px;
+line-height:30px;
+text-align: left;
+margin: 0px;
+padding-left: 15px;
+}
 /*vsechen text krome odkazu na vrchu*/
 .nadpis{
 font-family: 'Krona one', monospace;
@@ -526,6 +585,7 @@ bottom: 0px;
 grid-template-columns: repeat(5, 1fr);
 
 background-color: rgba(255, 255, 255, 0.8);
+grid-template-rows: 100px;
 }
 
 .kont1Par{
@@ -536,6 +596,16 @@ padding: 10px 0 10px 0;
 .kontParObr{
 width: auto;
 height: 80px;
+}
+
+#D29{
+padding-left: 10px;
+padding-right: 10px;
+}
+
+#offcity{
+height: 22px;
+padding: 29px 0 29px 0;
 }
 
 a:link{
@@ -583,6 +653,8 @@ font-size:22px;
 }
 .kontParObr{
 height:50px;
+padding-top: 15px;
+padding-bottom: 15px;
 }
 }
 @media(max-width:1050px){
@@ -700,22 +772,147 @@ padding: 10px;
 
 #hithitImg{
 height: 50px;
-margin: 25px 15px;
+margin: 25px 0px;
+}
+
+#hithit{
+
+    /*! line-height: 50px; */
+}
+
+#hithitCont{
+
+    grid-template-columns: 100px auto 100px;
 }
 
 #program{
 height: auto;
 }
+
+.kontPartneri{
+
+    height: 60px;
+    grid-template-rows: 60px;
+}
+
+.kontParObr{
+height:40px;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+#offcity{
+height: 14px;
+padding: 13px 5px 13px 0px;
+}
+
 }
 
 @media handheld, (max-width:500px), (orientation: portrait){
-.menu{display: none;
+
+#prvni{
+height: auto;
+display: grid;
+grid-template-rows:40px 150px 60px auto 100px;
 }
+    
+.menu#odkazy{display: none;
+}
+
+.menu#vrchni{
+height: 40px;
+text-align: center;
+}
+
+#home-button{
+/*! margin-top: 5px; */
+height: 30px;
+position: relative;
+float: initial;
+margin: 5px 0px;
+}
+
+#logo_trat{
+height: 30px;        
+}
+
+#menu_mobile{
+display: grid;    
+}
+
+#zaklInfo{
+height: 60px;
+margin-top: 0px;    
+position: relative;
+text-align: right;
+}
+
+#zaklInfoL{
+float: initial;
+/*! text-align: right; */
+margin: 0px 15px;
+display: block;
+line-height: 30px;
+}
+
+#zaklInfoR{
+float: initial;
+/*! text-align: right; */
+margin: 0px 15px;
+display: block;
+line-height: 30px;
+}
+
+#info{
+position: relative;
+top: 0px;
+/*! display: block; */
+height: -webkit-calc(100vh - 250px);
+height: calc(100vh - 250px);
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+#infoText{
+
+    margin: 0px;
+    position: absolute;
+    overflow: scroll;
+    display: block;
+    text-align: justify;
+    bottom: 0px;
+    top: 0px;
+}
+
+.perner{
+height:auto;
+right:-200px;
+/*! display: inherit; */
+/*! position: relative; */
+top: -100px;
+bottom: 0px;
+margin: 0px;
+}
+
+#hithitCont{
+
+    grid-template-columns: 70px auto 70px;
+}
+
+#hithit{
+
+    line-height: 50px;
+    font-size: 10px;
+}
+
+#hithitImg{
+    
+    height: 30px;
+    margin: 35px 0px;
+}
+
 #kontakty{display: none;
 }
-.perner{
-height:100%;
-right:-150px;
-}
+
 }
 
