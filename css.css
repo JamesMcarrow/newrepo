@@ -718,7 +718,7 @@ font-size:20px;
 font-size:20px;
 }
 }
-@media handheld, (max-width:735px), (orientation: landscape){
+@media handheld, (max-width:735px), handheld and (orientation: landscape){
 .nadpis{
 font-size:15px;
 }
