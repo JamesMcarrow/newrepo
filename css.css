@@ -269,6 +269,7 @@ margin-left:-8px;
 margin-right:-8px;
 padding-left: 70px;
 padding-right: 70px;
+position: relative;
 }
 
 #lineL{
@@ -364,6 +365,10 @@ width: auto;
 height: 40px;   
 }
 
+.ilegum500{
+display: none !important;
+}
+
 /*rozdeleni u dvou hlavnich interpretu; domyslet responzivitu*/
 /*zmenit sirku z px na % kvuli responzivite*/
 .leva{
@@ -375,6 +380,7 @@ background-color:white;
 display:inline-block;
 text-align:center;
 
+position: relative;
 }
 .prava{
 clip-path: polygon(40% 0, 100% 0, 100% 100%, 50% 100%);
@@ -383,8 +389,8 @@ width:100%;
 right:0px;
 background-color:white;
 display:inline-block;
-float:right;
 text-align:center;
+position: relative;
 }
 
 /*tabulka zbylych autoru*/
@@ -923,7 +929,6 @@ z-index: unset;
 
 #druhyStyl{
 margin:45px 0px 0px 50%;
-/*! margin-top:45px; */
 line-height: 18px;
 }
 
@@ -936,7 +941,7 @@ line-height: 18px;
 
 #druhyText{
 top: 68px;
-bottom: 45px;
+bottom: 15px;
 margin-right: 55px;
 margin-top: 0px;
 margin-bottom: 0px;
@@ -965,7 +970,7 @@ line-height: 18px;
 
 #tretiText{
 top: 68px;
-bottom: 45px;
+bottom: 15px;
 margin-left: 55px;
 margin-top: 0px;
 margin-bottom: 0px;
@@ -1214,6 +1219,118 @@ padding: initial;
 
 .program-li{
 font-size: 17px;
+}
+
+#druhy{
+height:50vh;
+}
+
+#druhyPoz{
+z-index: -1;
+}
+
+#druhyStyl{
+top: 63px;
+position: absolute;
+left: 50%;
+margin: 0px;
+line-height: 35px;
+}
+
+#druhyJmeno{
+    margin: 0px;
+    position: absolute;
+    top: 45px;
+    right: 15px;
+}
+
+#druhyText{
+    margin-right: 15px;
+    top: 98px;
+}
+
+#treti{
+height:50vh;
+}
+
+#tretiPoz{
+z-index: -1;
+}
+
+#tretiStyl{
+    top: 63px;
+    position: absolute;
+    right: 50%;
+    margin: 0px;
+    line-height: 35px;
+}
+
+#tretiJmeno{
+margin: 0px;
+position: absolute;
+top: 45px;
+left: 15px;
+}
+
+#tretiText{
+    margin-left: 15px;
+    top: 98px;
+}
+
+.webLinkL{
+    top: 68px;
+}
+
+.webLinkR{
+    top: 68px;
+}
+
+.webLinkImg{
+height: 25px;   
+}
+
+.webLink500{
+bottom: calc(40vh + 15px);
+top: unset;
+}
+
+.line{
+    height: 15vh;
+}
+
+.line_artist_detail_L{
+height:85vh;
+padding: 0px;
+}
+
+.line_artist_detail_R{
+height:85vh;
+padding: 0px;
+}
+
+.line_artist_detail_picture{
+height: 40vh;
+
+bottom: 0px;
+width: 100%;
+}
+
+.line_artist_detail_info{
+height: 45vh;
+width: 100%;
+}
+
+.ilegum500{
+
+    display:   inline !important;
+    position: absolute !important;
+    text-align: right;
+    font-size: 17px !important;
+    right: 15px;
+}
+
+.ilegumVic{
+display: none !important;
 }
 
 #kontakty{display: none;
