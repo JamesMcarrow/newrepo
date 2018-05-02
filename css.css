@@ -175,18 +175,85 @@ padding-bottom:10px;
 #druhy{
 width:auto;
 height:50vh;
-/*background-image:url("vneumicky.jpg");*/
-/*background-position: -10% 0%;*/
 margin:0px -8px 0px -8px;
 position:relative;
 }
+
+#druhyPoz{
+display: inline;
+position: absolute;
+left: 0px;
+height: 100%;
+width: 50%;
+z-index: -1;
+
+background-image:url(vneumicky_web.jpg);
+background-position: center;
+background-size: cover;      
+}
+
+#druhyStyl{
+float:left;
+margin-left:50%;
+margin-top:86px;
+display: inline;    
+}
+
+#druhyJmeno{
+float:right;
+margin-right:70px;
+margin-top:70px;
+display: inline;    
+}
+
+#druhyText{
+position: absolute;
+margin-right: 70px;
+margin-top: 140px;
+margin-left: 50%    
+}
+
 #treti{
 width:auto;
 height:50vh;
-/*background-image:url("tri.jpeg");*/
 margin:0px -8px 0px -8px;
 position:relative;
 }
+
+#tretiPoz{
+display: inline;
+position: absolute;
+right: 0px;
+height: 100%;
+width: 50%;
+z-index: -1; /*zde nutny*/ 
+
+background-image:url(market_web.jpg);
+background-position: center;
+background-size: cover;      
+}
+
+#tretiStyl{
+float: right;
+margin-right: 50%;
+margin-top:86px;
+display: inline;    
+}
+
+#tretiJmeno{
+float: left;
+margin-left: 70px;
+margin-top:70px;
+display: inline;    
+}
+
+#tretiText{
+position: absolute;
+margin-left: 70px;
+margin-top: 140px;
+margin-right: 50%    
+}
+
 /*cernobile prouzky ostatnich interpetu*/
 #ostatni{
 width:auto;
@@ -212,11 +279,27 @@ margin-top: 75px;
 margin-bottom: 0px;
 }
 
+#lineLStyl{
+display: inline;
+float: left;
+position: relative;
+margin-top: 91px;
+margin-bottom: 0px;
+}
+
 #lineR{
 display: inline;
 float: right;
 position: relative;
 margin-top: 75px;
+margin-bottom: 0px;
+}
+
+#lineRStyl{
+display: inline;
+float: right;
+position: relative;
+margin-top: 91px;
 margin-bottom: 0px;
 }
 
@@ -255,20 +338,30 @@ height: 50vh;
 width: 60%;
 }
 
+#line_artist_detail_text{
+margin-top: 15px;
+padding-left: 70px;
+padding-right: 70px;
+}
+
 .webLinkL{
 position: absolute;
 left: 15px;
 bottom: 15px;
-height: 40px;
-width: 40px;
+height: auto;
+width: auto;
 }
 
 .webLinkR{
 position: absolute;
 right: 15px;
 bottom: 15px;
-height: 40px;
-width: 40px;
+height: auto;
+width: auto;
+}
+
+.webLinkImg{
+height: 40px;   
 }
 
 /*rozdeleni u dvou hlavnich interpretu; domyslet responzivitu*/
@@ -342,7 +435,7 @@ margin-top: 75px;
 #tabDruh{
 text-align: right;
 position: absolute;
-margin-bottom: 0px;
+margin: 0px;
 bottom: 15px;
 right: 15px;
 }
@@ -820,6 +913,153 @@ margin: 15px;
 padding: initial;
 }
 
+#druhy{
+height:100vh;
+}
+
+#druhyPoz{
+z-index: unset;
+}
+
+#druhyStyl{
+margin:45px 0px 0px 50%;
+/*! margin-top:45px; */
+line-height: 18px;
+}
+
+#druhyJmeno{
+margin-right:15px;
+margin-top:45px;
+font-size: 18px;
+line-height: 18px;
+}
+
+#druhyText{
+top: 68px;
+bottom: 45px;
+margin-right: 55px;
+margin-top: 0px;
+margin-bottom: 0px;
+overflow-y: scroll;
+}
+
+#treti{
+height:100vh;
+}
+
+#tretiPoz{
+z-index: unset;
+}
+
+#tretiStyl{
+margin: 45px 50% 0px 0px;
+line-height: 18px;
+}
+
+#tretiJmeno{
+margin-left: 15px;
+margin-top: 45px;
+font-size: 18px;
+line-height: 18px;
+}
+
+#tretiText{
+top: 68px;
+bottom: 45px;
+margin-left: 55px;
+margin-top: 0px;
+margin-bottom: 0px;
+overflow-y: scroll;
+}
+
+.webLinkL{
+bottom: unset;
+top: calc(50% - 15px);
+}
+
+.webLinkR{
+    bottom: unset;
+    top: calc(50% - 12.5px);
+}
+
+.webLinkImg{
+height: 25px;   
+}
+
+.line{
+padding-left: 15px;
+padding-right: 15px;
+}
+
+#lineL{
+margin-top: 45px;
+margin-bottom: 0px;
+font-size: 18px;
+line-height: 18px;
+}
+
+#lineLStyl{
+margin-top: 45px;
+line-height: 18px;
+}
+
+#lineR{
+margin-top: 45px;
+margin-bottom: 0px;
+font-size: 18px;
+line-height: 18px;
+}
+
+#lineRStyl{
+margin-top: 45px;
+line-height: 18px;
+}
+
+.line_artist_detail_L{
+height:75vh;
+padding-left: 15px;
+}
+
+.line_artist_detail_R{
+height:75vh;
+padding-right: 15px;
+}
+
+.line_artist_detail_picture{
+height: 75vh;
+
+}
+
+.line_artist_detail_info{
+height: 75vh;
+}
+
+#line_artist_detail_text{
+position: absolute;
+top: 15px;
+bottom: 15px;
+left: 55px;
+right: 55px;
+overflow-y: scroll;
+margin: 0px;
+padding-left: unset;
+padding-right: unset;
+}
+
+#tabulka{
+height: 150vh;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 50vh);
+}
+
+#tabJmeno{
+text-align:left;
+padding-left: 15px;
+margin-top: 45px;
+font-size: 18px;
+line-height: 18px;
+}
+
 .kontPartneri{
 
     height: 60px;
@@ -933,8 +1173,10 @@ margin: 0px;
 
 #hithit{
 
-    line-height: 50px;
+    line-height: 30px;
     font-size: 10px;
+    top: 20px;
+    margin: 0px;
 }
 
 #hithitImg{
