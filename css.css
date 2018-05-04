@@ -5,15 +5,26 @@ body{
     left:0px;
     right: 0px;
     bottom: 0px;
-background-image:url("trat_pozadi_web.jpg");
+/*background-image:url("trat_pozadi_web.jpg");
 background-size:  cover !important;
-background-position: 50% 50%;
-background-attachment:fixed;
+background-position: 50% 50% !important;
+background-attachment:fixed !important;
 /*height:100%;
 width: 100%;*/
 z-index: -2;
 overflow-y: scroll;
 overflow-x: hidden;
+}
+
+#pozadi{
+position: fixed;
+width: 100%;
+height: 100vh;
+background-image: url("trat_pozadi_web.jpg");
+background-size:  cover !important;
+background-position: 50% 50%;
+margin: -8px;
+z-index: -1;
 }
 
 /*uplny uvodni obrazek; vymenit treba za uvodni fotku udalosti na fb ale do cernobile nebo nejak upravit aby se to hodilo*/
@@ -672,9 +683,9 @@ margin: 0px -8px -8px -8px;
 display: grid;
 position: absolute;
 width: 100%;
-height: 40%;
+height: 100%;
 bottom: 0px;
-grid-template-rows: auto 130px;
+grid-template-rows: auto 30px 100px 30px;
 
 background-image:url("vzorek_pozadi_web.png");
 background-position: center;
@@ -683,8 +694,71 @@ background-size: cover;
 
 .kontInfo{
  width: 100%;
- height: 100%;
+ height:   auto;
+position: absolute;
+ bottom: 130px;
+ top: 0px;
+ display: grid;
+ grid-template-columns: 50% 50%;
+}
+
+#kontInfoColumn{
+display: grid;
+grid-template-rows: auto auto auto;
+grid-template-columns: 50% 50%;
+grid-template-areas: "kontNad kontNad"
+                     "kontText kontText"
+                     "kontMediaL kontMediaR";
 position: relative;
+}
+
+#kontInfoNad{
+
+    text-align: center;
+    margin: 0px;
+    padding-top: 70px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.kontInfoMedia{
+    
+    height: 100px;
+    text-align: center;
+    /*! padding: -10px; */
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.kontInfoIkona{
+
+    height: 80px;
+    margin: 10px;
+}
+
+#kontMapa{
+/*! position: absolute; */
+/*! height: 100%; */
+/*! width: 100%; */
+/*! padding-left: 15px; */
+/*! right: 0px; */
+background-image: url(trat_mapa_web.jpg);
+background-size: 100%;
+background-position: center;
+}
+
+#kontParNad{
+position: absolute;
+bottom: 100px;
+height: 30px;
+width: 100%;
+
+background-color: rgba(255, 255, 255, 0.8);
+}
+
+#kontParText{
+margin: 0 0 0 15px;
+line-height: 30px;
 }
 
 .kontPartneri{
@@ -717,6 +791,34 @@ padding-right: 10px;
 #offcity{
 height: 22px;
 padding: 29px 0 29px 0;
+}
+
+#copyright{
+
+    height: 50px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    /*! color: #d9d9d9 !important; */
+}
+
+#copyL{
+    
+    float: left;
+    line-height: 50px;
+    margin: 0px;
+    padding-left: 15px;
+    color: #666666 !important;
+}
+
+#copyR{
+    
+    float: right;
+    line-height: 50px;
+    margin: 0px;
+    padding-right: 15px;
+    color: #666666 !important;
 }
 
 a:link{
@@ -818,6 +920,11 @@ font-size:20px;
 }
 }
 @media handheld, (max-width:735px), handheld and (orientation: landscape){
+
+#pozadi{
+}
+
+    
 .nadpis{
 font-size:15px;
 }
@@ -1065,6 +1172,63 @@ font-size: 18px;
 line-height: 18px;
 }
 
+#kontakty{
+position: relative;
+bottom: 0px;
+height: 100vh;
+width: auto;
+margin: 0px -8px -8px -8px;
+}
+
+.kontDiv{
+display: grid;
+position: absolute;
+width: 100%;
+height: 40%;
+bottom: 0px;
+grid-template-rows: auto 20px 60px;
+
+background-image:url("vzorek_pozadi_web.png");
+background-position: center;
+background-size: cover;
+}
+
+.kontInfo{
+    bottom: 80px;
+}
+
+
+
+.kont1Par{
+text-align: center;
+padding: 10px 0 10px 0;
+}
+
+
+
+#D29{
+padding-left: 10px;
+padding-right: 10px;
+}
+
+#kontMapa{
+position: absolute;
+height: 100%;
+width: auto;
+padding-left: 15px;
+right: 0px;
+}
+
+#kontParNad{
+bottom: 60px;
+height: 20px;
+
+}
+
+#kontParText{
+line-height: 20px;
+}
+
 .kontPartneri{
 
     height: 60px;
@@ -1082,10 +1246,29 @@ height: 14px;
 padding: 13px 5px 13px 0px;
 }
 
+#copyright{
+
+}
+
+#copyL{
+    
+    font-size: 15px;
+}
+
+#copyR{
+    
+    font-size: 15px;
+}
+
 }
 
 @media handheld, (max-width:500px) and (orientation: portrait){
 
+#pozadi{
+    background-position: 17% 50%;
+}
+    
+    
 #prvni{
 height: auto;
 display: grid;
@@ -1158,7 +1341,7 @@ overflow-y: hidden;
     text-align: justify;
     bottom: 0px;
     top: 0px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .perner{
@@ -1247,6 +1430,7 @@ line-height: 35px;
 #druhyText{
     margin-right: 15px;
     top: 98px;
+    font-size: 17px;
 }
 
 #treti{
@@ -1333,7 +1517,98 @@ width: 100%;
 display: none !important;
 }
 
-#kontakty{display: none;
+#kontakty{
+display: none;
+position: relative;
+bottom: 0px;
+height: 100vh;
+width: auto;
+margin: 0px -8px -8px -8px;
+}
+
+.kontDiv{
+display: grid;
+position: absolute;
+width: 100%;
+height: 40%;
+bottom: 0px;
+grid-template-rows: auto 130px;
+
+background-image:url("vzorek_pozadi_web.png");
+background-position: center;
+background-size: cover;
+}
+
+.kontInfo{
+ width: 100%;
+ height: 100%;
+position: relative;
+}
+
+#kontMapa{
+position: absolute;
+height: 100%;
+width: auto;
+padding-left: 15px;
+right: 0px;
+}
+
+#kontParNad{
+position: absolute;
+bottom: 100px;
+height: 30px;
+width: 100%;
+
+background-color: rgba(255, 255, 255, 0.8);
+}
+
+#kontParText{
+margin: 0 0 0 15px;
+line-height: 30px;
+}
+
+.kontPartneri{
+display: grid;
+position: absolute;
+width: 100%;
+height: 100px;
+bottom: 0px;
+grid-template-columns: repeat(5, 1fr);
+
+background-color: rgba(255, 255, 255, 0.8);
+grid-template-rows: 100px;
+}
+
+.kont1Par{
+text-align: center;
+padding: 10px 0 10px 0;
+}
+
+.kontParObr{
+width: auto;
+height: 80px;
+}
+
+#D29{
+padding-left: 10px;
+padding-right: 10px;
+}
+
+#offcity{
+height: 22px;
+padding: 29px 0 29px 0;
+}
+
+#copyright{
+
+}
+
+#copyL{
+    
+}
+
+#copyR{
+    
 }
 
 }
