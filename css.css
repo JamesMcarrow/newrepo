@@ -636,41 +636,44 @@ text-align:justify;
 }
 
 
-#gallery-container{
-width:auto;
-height:1080px;
-margin:0px -8px 0px -8px;
+/*galerie*/
+
+.gallery{
+height:100vh;
+width:100vw;
+position:relative;
+}
+.mySlides{
+height:100vh;
+width:100vw;
+position:relative;
+display:none;
+}
+#first-slide{
+display:block;
+}
+.left-button{
+height:7.5%;
+width:5%;
+background-color:#CCCBCB;
+border:none;
+opacity:0.95;
 position:absolute;
-bottom:0px;
-top:9000px;
+top:46.25%;
+bottom:46.25%;
 }
-
-#gallery{
- list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float:left;
-    width:200px;
-    opacity:1;
+.right-button{
+height:7.5%;
+width:5%;
+background-color:#CCCBCB;
+border:none;
+opacity:0.95;
+position:absolute;
+top:46.25%;
+bottom:46.25%;
+left:95%;
 }
-.gal{
-display:inline-block;
-width:200px;
-height:200px;
-opacity:1;
-}
-.gal-img{
-width:200px;
-height:200px;
-}
-#gallery-full{
-height:1000px;
-width:1720px;
-float:right;
-background-color:red;
-margin:0px 0px 0px 0px;
-}
-
+/*konec galerie*/
 #kontakty{
 position: relative;
 bottom: 0px;
