@@ -27,7 +27,7 @@
       <div>
       <ul class="menu" id="vrchni">
       <li class="menu-li"><a class="menu" id="odkazy" href="#kontakty">KONTAKTY</a></li>
-      <li class="menu-li"><a class="menu" id="odkazy" href="#gallery-container">GALERIE</a></li>
+      <li class="menu-li"><a class="menu" id="odkazy" href="#gallery">GALERIE</a></li>
       <li class="menu-li"><a class="menu" id="odkazy" href="#druhy">LINEUP</a></li>
       <li class="menu-li"><a class="menu" id="odkazy" href="#program">PROGRAM</a></li>
       <li class="menu-li"><a class="menu" id="odkazy" href="#prvni">O TRATI</a></li>
@@ -74,7 +74,7 @@
           
           <div>
           
-              <a href="#gallery-container">
+              <a href="#gallery">
               
                   <p class="menu_mobileItem">
                     GALERIE    
@@ -346,9 +346,13 @@
             <p class="nadpis2" id="lineRStyl">
             HUDBA
             </p>
-
-            <p class="nadpis" id="lineL">
-            MARTIN DOSTÁL
+            
+            <p class="nadpis MD500" id="lineL" style="text-transform: none;">
+            M. DOSTÁL <br>a V. KREJČÍŘOVÁ
+            </p>
+            
+            <p class="nadpis MDVic" id="lineL" style="text-transform: none;">
+            M. DOSTÁL a V. KREJČÍŘOVÁ
             </p>
 
         </div>
@@ -357,21 +361,19 @@
       <!--MD info-->
       <div class="line_artist_detail_L" id="second-artist-detail" style="background-color:black;">
 
-          <div class="line_artist_detail_picture" style="right: 0px; background-color: blue; /*background-image: url(); MD obrazek*/ ">
+          <div class="line_artist_detail_picture" style="right: 0px; background-image: url(martin_dostal_web.jpg);">
           </div>
 
           <div class="line_artist_detail_info" style="left: 0px;">
 
               <p class="textW" id="line_artist_detail_text">
 
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam
-                  lectus justo, vulputate eget mollis sed, tempor sed magna. Nemo
-                  enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                  fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-                  sequi nesciunt. Aliquam ante. Ut enim ad minima veniam, quis nostrum
-                  exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
-                  ex ea commodi consequatur? Duis condimentum augue id magna semper
-                  rutrum. Aliquam erat volutpat.
+                  Oba studují na konzervatoři v Pardubicích. Martin hru na
+                  housle a navštěvuje 1. ročník, Verča hru na akordeon a 
+                  letos je v maturitním, tedy 4.ročníku. Úspěšně vykonala 
+                  talentovou zkoušku na The National Danish Academy of Music v 
+                  Odense, takže od příštího roku bude studovat v Dánsku. O svých
+                  úspěších psát nechtějí, ale těší se, jak Vám zahrají!
               </p>
           </div>
 <!--MD web-->
@@ -556,7 +558,7 @@
             </p>
         </div>
 
-        <div class="tabObrazek" style="background-color: purple;">
+        <div class="tabObrazek" style="background-image: url(umprujem_web.jpg)">
         </div>
     </div>
 
@@ -604,23 +606,27 @@
     <div class="theater-line"><span class="nadpis">Jelita</span></div>
 
     </div>-->
-<!--
-  <div class="gallery">
-
-    <img class="mySlides" id="first-slide" src="gal_img_1.png">
-    <img class="mySlides" src="gal_img_2.jpg">
-    <img class="mySlides" src="gal_img_3.jpg">
-    <img class="mySlides" src="gal_img_4.jpg">  
-      <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="right-button" onclick="plusDivs(+1)">&#10095;</button>   
-
+  
+    <!--Galerie-->
+  <div id="gallery">
+      
+      <p class="nadpis" id="galNad">
+        Galerie
+      </p>
+      
+      
+    <div id="galContent">  
+      
+        <img class="mySlides" id="first-slide" src="gal_img_1.png">
+        <img class="mySlides" src="gal_img_2.jpg">
+        <img class="mySlides" src="gal_img_3.jpg">
+        <img class="mySlides" src="gal_img_4.jpg">  
+    
+        <a href="#gallery"><button class="left-button" onclick="plusDivs(-1)">&#10094;</button></a>
+        <a href="#gallery"><button class="right-button" onclick="plusDivs(+1)">&#10095;</button></a>   
+    </div>
   </div> 
     
-
-  
-  </div>
--->
-
 <!--kontakty-->
 <div id="kontakty">
 
@@ -641,7 +647,10 @@
                 <div style="grid-area:kontText;">
                     <p class="nadpis2"
                        id="kontInfoText">
-                    
+                        organizátorky: <br>
+                        <span class="text" id="galText"> Markéta Richterová <br> </span>
+                        <span class="text" id="galText"> Dorota Václavíková<br> </span>
+                        <span class="text" id="galText"> Manka Lustigová </span>
                     </p>
                 </div>
                 

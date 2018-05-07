@@ -376,6 +376,10 @@ width: auto;
 height: 40px;   
 }
 
+.MD500{
+display: none !important;
+}
+
 .ilegum500{
 display: none !important;
 }
@@ -638,41 +642,82 @@ text-align:justify;
 
 /*galerie*/
 
-.gallery{
+#gallery{
 height:100vh;
 width:100vw;
 position:relative;
+margin: 0px -8px;
+z-index: 0;
+text-align: center;
 }
+
+#galNad{
+
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 0px;
+    padding-top: 70px;
+    background-color: rgba(255,255,255,0.65);
+}
+
+#galContent{
+
+    position: absolute;
+    display: block;
+    height: calc(100vh - 133px);
+    width: 100vw;
+    background-color: rgba(255,255,255,0.65);
+}
+
 .mySlides{
-height:100vh;
-width:100vw;
+max-height:100%;
+max-width:100%;
 position:relative;
 display:none;
+top: 50%;
+transform: translateY(-50%);
 }
+
 #first-slide{
-display:block;
+display:inline;
 }
 .left-button{
-height:7.5%;
 width:5%;
-background-color:#CCCBCB;
+background-color:#ffffff;
 border:none;
-opacity:0.95;
+opacity:0.4;
 position:absolute;
-top:46.25%;
-bottom:46.25%;
+top:0px;
+bottom:0px;
+left: 0px;
 }
+
+.left-button:hover{
+opacity: 0.8;
+}
+
 .right-button{
-height:7.5%;
 width:5%;
-background-color:#CCCBCB;
+background-color:#ffffff;
 border:none;
-opacity:0.95;
+opacity:0.4;
 position:absolute;
-top:46.25%;
-bottom:46.25%;
-left:95%;
+top:0px;
+bottom:0px;
+right:0px;
 }
+
+#galText{
+
+    padding-left: 55px;
+}
+
+
+.right-button:hover{
+opacity: 0.8;
+}
+
 /*konec galerie*/
 #kontakty{
 position: relative;
@@ -707,7 +752,7 @@ position: absolute;
 
 #kontInfoColumn{
 display: grid;
-grid-template-rows: auto auto auto;
+grid-template-rows: 133px auto auto;
 grid-template-columns: 50% 50%;
 grid-template-areas: "kontNad kontNad"
                      "kontText kontText"
@@ -721,6 +766,12 @@ position: relative;
     margin: 0px;
     padding-top: 70px;
     background-color: rgba(255,255,255,0.8);
+}
+
+#kontInfoText{
+margin: 0px 15px;
+
+font-size: 30px;
 }
 
 .kontInfoMedia{
@@ -1159,6 +1210,7 @@ overflow-y: scroll;
 margin: 0px;
 padding-left: unset;
 padding-right: unset;
+font-size: 17px;
 }
 
 #tabulka{
@@ -1173,6 +1225,25 @@ padding-left: 15px;
 margin-top: 45px;
 font-size: 18px;
 line-height: 18px;
+}
+
+#galNad{
+
+    padding-top: 45px;
+    font-size: 25px;
+}
+
+#galContent{
+
+    height: calc(100vh - 77px);
+}
+
+.left-button{
+width:40px;
+}
+
+.right-button{
+width:40px;
 }
 
 #kontakty{
@@ -1462,6 +1533,7 @@ left: 15px;
 #tretiText{
     margin-left: 15px;
     top: 98px;
+    font-size: 17px;
 }
 
 .webLinkL{
@@ -1507,6 +1579,18 @@ height: 45vh;
 width: 100%;
 }
 
+.MD500{
+display:   inline !important;
+    position: absolute !important;
+    text-align: left;
+    font-size: 17px !important;
+    left: 15px;
+}
+
+.MDVic{
+display: none !important;
+}
+
 .ilegum500{
 
     display:   inline !important;
@@ -1518,6 +1602,21 @@ width: 100%;
 
 .ilegumVic{
 display: none !important;
+}
+
+#gallery{
+height:60vh;
+}
+
+#galNad{
+
+    padding-top: 45px;
+    font-size: 25px;
+}
+
+#galContent{
+
+    height: calc(60vh - 77px);
 }
 
 #kontakty{
