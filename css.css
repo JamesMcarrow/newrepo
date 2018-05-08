@@ -1510,6 +1510,7 @@ line-height: 35px;
     margin-right: 15px;
     top: 98px;
     font-size: 17px;
+    bottom: 45px;
 }
 
 #treti{
@@ -1539,14 +1540,17 @@ left: 15px;
     margin-left: 15px;
     top: 98px;
     font-size: 17px;
+    bottom: 45px;
 }
 
 .webLinkL{
-    top: 68px;
+    top: unset;
+    bottom: 10px;
 }
 
 .webLinkR{
-    top: 68px;
+    bottom: 10px;
+    top: unset;
 }
 
 .webLinkImg{
