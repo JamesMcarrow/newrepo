@@ -645,12 +645,12 @@
                 </div>
                 
                 <div style="grid-area:kontText;">
-                    <p class="nadpis2"
+                    <p class="nadpis12"
                        id="kontInfoText">
                         organizátorky: <br>
-                        <span class="text" id="galText"> Markéta Richterová <br> </span>
-                        <span class="text" id="galText"> Dorota Václavíková<br> </span>
-                        <span class="text" id="galText"> Manka Lustigová </span>
+                        <span class="nadpis2" id="galText"> Markéta Richterová <br> </span>
+                        <span class="nadpis2" id="galText"> Dorota Václavíková<br> </span>
+                        <span class="nadpis2" id="galText"> Manka Lustigová </span>
                     </p>
                 </div>
                 
@@ -661,27 +661,35 @@
                         
                         <img src="ikona_fb_web.png"
                              alt="FB"
-                             class="kontInfoIkona">
+                             class="kontInfoIkona"
+                             onmouseover="this.src='ikona_fbH_web.png'"
+                             onmouseout="this.src='ikona_fb_web.png'">
                     </a>    
                 </div>
                 
                 <div class="kontInfoMedia"
                      style="grid-area:kontMediaR;">
                     
-                    <a href="">
+                    <a href="mailto:festival.trat@gmail.com"> 
                         
-                        <img src="ikona_ig_web.png"
-                             alt="IG"
-                             class="kontInfoIkona">
+                        <img src="ikona_mail_web.png"
+                             alt="MAIL"
+                             class="kontInfoIkona"
+                             onmouseover="this.src='ikona_mailH_web.png'"
+                             onmouseout="this.src='ikona_mail_web.png'">
                     </a>   
                 </div>
             </div>
             
-            <div id="kontMapa">
+            <div id="kontMapa"
+                 onclick="document.getElementById('kontMapa').style.display='none';
+                          document.getElementById('kontPlanek').style.display='inherit';">
+                
+            </div>
             
-                <!--<img src="trat_mapa_web.jpg"
-                 alt="MAPA"
-                 id="kontMapa">-->
+            <div id="kontPlanek"
+                 onclick="document.getElementById('kontMapa').style.display='inherit';
+                          document.getElementById('kontPlanek').style.display='none';">
             </div>
         </div>
 

@@ -710,7 +710,9 @@ right:0px;
 
 #galText{
 
-    padding-left: 55px;
+    padding-left: 15px;
+    margin-top: 10px;
+    display: block;
 }
 
 
@@ -769,9 +771,9 @@ position: relative;
 }
 
 #kontInfoText{
-margin: 0px 15px;
+margin: 15px 0px 0px 70px;
 
-font-size: 30px;
+/*! font-size: 30px; */
 }
 
 .kontInfoMedia{
@@ -791,14 +793,17 @@ font-size: 30px;
 }
 
 #kontMapa{
-/*! position: absolute; */
-/*! height: 100%; */
-/*! width: 100%; */
-/*! padding-left: 15px; */
-/*! right: 0px; */
 background-image: url(trat_mapa_web.jpg);
 background-size: 100%;
 background-position: center;
+display: inherit;
+}
+
+#kontPlanek{
+background-image: url(trat_planek_web.jpg);
+background-size: 100%;
+background-position: center;
+display: none;
 }
 
 #kontParNad{
