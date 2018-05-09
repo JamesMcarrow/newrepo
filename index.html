@@ -475,7 +475,8 @@
 <div id="tabulka">
 
     <!--ANTITALENT-->
-    <div class="tabUmelecB">
+    <div class="tabUmelecB"
+         style="grid-area:Antitalent;">
 
         <div class="tabText">
 
@@ -493,9 +494,10 @@
     </div>
 
     <!--Jelita-->
-    <div class="tabUmelecW">
+    <div class="tabUmelecW"
+         style="grid-area:Jelita;">
 
-        <div class="tabText">
+        <div class="tabTextVys">
 
             <p class="nadpis12" id="tabJmeno">
                 Jelita
@@ -506,17 +508,18 @@
             </p>
         </div>
 
-        <div class="tabObrazek" style="background-image: url(jelita_web.jpg);">
+        <div class="tabObrazek" style="background-image: ;">
         </div>
     </div>
 
-    <!--STEAKS de BISON-->
-    <div class="tabUmelecB">
+    <!--Guilty Echoes-->
+    <div class="tabUmelecB"
+         style="grid-area:GuiltyEchoes;">
 
         <div class="tabText">
 
-            <p class="nadpisW12" id="tabJmeno" style="text-transform: none;">
-                STEAKS de BISON
+            <p class="nadpisW12" id="tabJmeno">
+                Guilty Echoes 
             </p>
 
             <p class="nadpisW3" id="tabDruh">
@@ -524,14 +527,15 @@
             </p>
         </div>
 
-        <div class="tabObrazek" style="background-color: purple;">
+        <div class="tabObrazek" style="background-image: url(guilty_echoes_web.jpg);">
         </div>
     </div>
 
     <!--HYNEK-->
-    <div class="tabUmelecW">
+    <div class="tabUmelecW"
+         style="grid-area:Hynek;">
 
-        <div class="tabText">
+        <div class="tabTextVys">
 
             <p class="nadpis12" id="tabJmeno">
                 Hynek
@@ -542,12 +546,13 @@
             </p>
         </div>
 
-        <div class="tabObrazek" style="background-color: purple;">
+        <div class="tabObrazek" style="background-color: ;">
         </div>
     </div>
 
     <!--UMPRŮJEM-->
-    <div class="tabUmelecB">
+    <div class="tabUmelecB"
+         style="grid-area:Umprujem;">
 
         <div class="tabText">
 
@@ -564,13 +569,14 @@
         </div>
     </div>
 
-    <!--GUILTY ECHOES-->
-    <div class="tabUmelecW">
+    <!--Steaks de Bison-->
+    <div class="tabUmelecW"
+         style="grid-area:SdB;">
 
-        <div class="tabText">
+        <div class="tabTextVys">
 
-            <p class="nadpis12" id="tabJmeno">
-                Guilty Echoes
+            <p class="nadpis12" id="tabJmeno" style="text-transform: none;">
+                STEAKS de BISON
             </p>
 
             <p class="nadpis3" id="tabDruh">
@@ -578,7 +584,7 @@
             </p>
         </div>
 
-        <div class="tabObrazek" style="background-image: url(guilty_echoes_web.jpg);">
+        <div class="tabObrazek" style="background-image: ;">
         </div>
     </div>
 </div>
@@ -619,13 +625,15 @@
       
     <div id="galContent">  
       
+      <a href="#gallery">  
         <img class="mySlides" id="first-slide" src="gal_img_1.png">
         <img class="mySlides" src="gal_img_2.jpg">
         <img class="mySlides" src="gal_img_3.jpg">
         <img class="mySlides" src="gal_img_4.jpg">  
-    
-        <a href="#gallery"><button class="left-button" onclick="plusDivs(-1)">&#10094;</button></a>
-        <a href="#gallery"><button class="right-button" onclick="plusDivs(+1)">&#10095;</button></a>   
+      
+      </a>
+      <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="right-button" onclick="plusDivs(+1)">&#10095;</button> 
     </div>
   </div> 
     
@@ -646,14 +654,31 @@
                     </p>
                 </div>
                 
-                <div style="grid-area:kontText;">
+                <div style="grid-area:kontText;
+                            position: relative;">
+                  
+                    <div id="kontInfoKontaktujte">
+                    
+                         <p class="nadpis3" style="margin: 0px;">
+                        V případě jakýchkoliv dotazů nás neváhejte kontaktovat:
+                        </p>
+                    </div>
+                    
                     <p class="nadpis12"
                        id="kontInfoText">
-                        organizátorky: <br>
-                        <span class="nadpis2" id="galText"> Markéta Richterová <br> </span>
-                        <span class="nadpis2" id="galText"> Dorota Václavíková<br> </span>
-                        <span class="nadpis2" id="galText"> Manka Lustigová </span>
+                        hlavní organizátorky: <br>
+                        <span class="nadpis2" id="kontText"> Markéta Richterová <br> </span>
+                        <span class="nadpis2" id="kontText"> Dorota Václavíková<br> </span>
+                        <span class="nadpis2" id="kontText"> Manka Lustigová </span>
                     </p>
+                    
+                    <p class="nadpis12"
+                       id="kontInfoText">
+                        spoluorganizátoři: <br>
+                        <span class="nadpis2" id="kontText"> Kamila Dvořáková <br> </span>
+                        <span class="nadpis2" id="kontText"> Dan Pastera </span>
+                    </p>
+                    
                 </div>
                 
                 <div class="kontInfoMedia"
@@ -708,7 +733,8 @@
         <div class="kontPartneri">
 
             <!--D29-->
-            <div class="kont1Par">
+            <div class="kont1Par"
+                 style="grid-area:D29">
 
                 <a href="http://www.divadlo29.cz/">
                     <img src="logo_d29_web.jpg"
@@ -719,7 +745,8 @@
             </div>
 
             <!--OFFCITY-->
-            <div class="kont1Par">
+            <div class="kont1Par"
+                 style="grid-area:Offcity">
 
                 <a href="http://www.offcity.cz/">
                     <img src="logo_offcity_web.png"
@@ -730,7 +757,8 @@
             </div>
 
             <!--MIXAGE-->
-            <div class="kont1Par">
+            <div class="kont1Par"
+                 style="grid-area:Mixage">
 
                 <a href="http://www.mixage.cz/">
                     <img src="logo_mixage_web.jpg"
@@ -740,7 +768,8 @@
             </div>
 
             <!--SUPŠ HK-->
-            <div class="kont1Par">
+            <div class="kont1Par"
+                 style="grid-area:Hk">
 
                 <a href="http://hnn.cz/profil-skoly/">
                     <img src="logo_sups_hk_web.jpg"
@@ -750,7 +779,8 @@
             </div>
 
             <!--SSUD BRNO-->
-            <div class="kont1Par">
+            <div class="kont1Par"
+                 style="grid-area:Brno">
 
                 <a href="http://www.ssudbrno.cz/cs/titulni-stranka/">
                     <img src="logo_ssud_brno_web.jpg"
@@ -759,6 +789,59 @@
                 </a>
             </div>
         </div>
+        
+        <div id="menu_mobile_dole">
+          
+          <div>
+          
+              <a href="#prvni">
+              
+                  <p class="menu_mobileItemDole">
+                    O TRATI    
+                  </p>
+              </a>    
+          </div>
+          
+          <div>
+              
+              <a href="#program">
+                
+                  <p class="menu_mobileItemDole">
+                    PROGRAM    
+                  </p>
+              </a>
+          </div>
+          
+          <div>
+          
+              <a href="#druhy">
+                
+                  <p class="menu_mobileItemDole">
+                    LINEUP    
+                  </p>
+              </a>  
+          </div>
+          
+          <div>
+          
+              <a href="#gallery">
+              
+                  <p class="menu_mobileItemDole">
+                    GALERIE    
+                  </p>
+              </a>
+          </div>
+          
+          <div>
+              
+              <a href="#kontakty">
+              
+                  <p class="menu_mobileItemDole">
+                    KONTAKTY    
+                  </p>
+              </a>
+          </div>
+      </div>
         
         <div id="copyright">
         
